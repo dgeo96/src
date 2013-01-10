@@ -1,0 +1,1 @@
+#undef  CONFIG_XSCALE_PMU_TIMER

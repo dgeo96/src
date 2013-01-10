@@ -1,0 +1,1 @@
+#define CONFIG_MTD_CONCAT_MODULE 1

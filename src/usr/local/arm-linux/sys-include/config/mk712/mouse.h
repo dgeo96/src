@@ -1,0 +1,1 @@
+#undef  CONFIG_MK712_MOUSE

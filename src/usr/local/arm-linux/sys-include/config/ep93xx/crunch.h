@@ -1,0 +1,1 @@
+#undef  CONFIG_EP93XX_CRUNCH

@@ -1,0 +1,9 @@
+config USER_TEST_TEST_TS
+        bool "test_ts"
+        help
+          bite1
+
+config USER_TEST_AD_TOUCHSCREEN
+        bool "ad_touchscreen"
+        help
+          bite2

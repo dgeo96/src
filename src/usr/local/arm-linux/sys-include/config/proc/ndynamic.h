@@ -1,0 +1,1 @@
+#define CONFIG_PROC_NDYNAMIC (4096)

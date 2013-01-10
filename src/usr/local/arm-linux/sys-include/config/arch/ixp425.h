@@ -1,0 +1,1 @@
+#define CONFIG_ARCH_IXP425 1

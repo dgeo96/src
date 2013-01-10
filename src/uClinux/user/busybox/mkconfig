@@ -1,0 +1,57 @@
+#!/bin/sh
+#
+#	mkconfig -- convert from uClinux/dist config to local .config
+#
+#	For now we just convert the existing old style configs from the
+#	uClinux-dist setup to new style .config for busybox. Eventually
+#	I want to switch to new style configs in uClinux-dist and then
+#	just include the Kconfig/config.in files here directly.
+#
+
+# Examine defconfig one line at a time.
+# For each line which matches a CONFIG environment variable,
+# from config/.config, output the value from the environment variable
+# Otherwise output the value from defconfig.
+
+# Load the config
+source ${ROOTDIR:-../..}/config/.config
+
+# CONFIG_FEATURE_COMMAND_HISTORY=15
+# CONFIG_FEATURE_COMMAND_SAVEHISTORY is not set
+
+cat defconfig | while read LINE; do
+	# Convert is not set to =n
+	LINE=`echo "$LINE" | sed -e 's/^# \(.*\) is not set/\1=n/'`
+	case "$LINE" in
+	*CONFIG_FEATURE_*)
+		name=`echo "$LINE" | sed -e 's/^[# ]*CONFIG_FEATURE_\([^ =]*\).*/\1/'`
+		defvalue=`echo "$LINE" | sed -e 's/^[# ]*CONFIG_FEATURE_[^ =]*.\(.*\)/\1/'`
+		feature=_FEATURE
+		;;
+	*CONFIG_TRUE*|*CONFIG_FALSE*) continue;;
+	*CONFIG_*)
+		name=`echo "$LINE" | sed -e 's/^[# ]*CONFIG_\([^ =]*\).*/\1/'`
+		defvalue=`echo "$LINE" | sed -e 's/^[# ]*CONFIG_[^ =]*.\(.*\)/\1/'`
+		feature=
+		;;
+	*)
+		echo "$LINE"
+		continue
+		;;
+	esac
+
+	ucname=CONFIG_USER_BUSYBOX_$name
+	bbname=CONFIG${feature}_$name
+	eval value=\${$ucname:-$defvalue}
+	echo $bbname=$value | sed -e 's/^\(.*\)=n/# \1 is not set/'
+done
+
+# And just do this one manually
+if [ "$CONFIG_USER_BUSYBOX_TRUE_FALSE" = y ]; then
+	echo "CONFIG_TRUE=y"
+	echo "CONFIG_FALSE=y"
+else
+	echo "# CONFIG_TRUE is not set"
+	echo "# CONFIG_FALSE is not set"
+fi
+exit 0

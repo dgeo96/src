@@ -1,0 +1,414 @@
+make -C tools/ucfront
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/tools/ucfront'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/tools/ucfront'
+ln -sf /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/tools/ucfront/ucfront tools/ucfront-gcc
+ln -sf /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/tools/ucfront/ucfront tools/ucfront-g++
+ln -sf /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/tools/ucfront/ucfront-ld tools/ucfront-ld
+make ARCH=arm CROSS_COMPILE=arm-linux- -j1 -C linux-2.6.x  || exit 1
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/linux-2.6.24.2-lpc2478-patched'
+  CHK     include/linux/version.h
+make[2]: `include/asm-arm/mach-types.h' is up to date.
+  CHK     include/linux/utsrelease.h
+  CALL    scripts/checksyscalls.sh
+  CHK     include/linux/compile.h
+  Kernel: arch/arm/boot/Image is ready
+  Kernel: arch/arm/boot/zImage is ready
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/linux-2.6.24.2-lpc2478-patched'
+if [ -f linux-2.6.x/vmlinux ]; then \
+		ln -f linux-2.6.x/vmlinux linux-2.6.x/linux ; \
+	fi
+. linux-2.6.x/.config; if [ "$CONFIG_MODULES" = "y" ]; then \
+		[ -d linux-2.6.x/modules ] || mkdir linux-2.6.x/modules; \
+		make ARCH=arm CROSS_COMPILE=arm-linux- -C linux-2.6.x modules; \
+	fi
+for dir in  include lib include user ; do [ ! -d $dir ] || make ARCH=arm -C $dir || exit 1 ; done
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+make -j1 -C ../include                 || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+[ -z "uClibc" ] ||\
+		make -j1 uClibc || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ ! -d "uClibc" ] || ( touch uClibc/.sgbuilt_lib && make -j1 -C uClibc ) || exit $?
+make[3]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc'
+Current kernel version is 2.6.24
+
+
+Using kernel headers from 2.6.24 for architecture 'arm'
+	provided in directory /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/linux-2.6.x/.
+
+
+make -C libc/sysdeps/linux/common headers
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/common'
+ln -fs ../libc/sysdeps/linux/common/fpu_control.h ../../../..//include/
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/common'
+make -C libc/sysdeps/linux/arm headers
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/arm'
+ln -fs ../libc/sysdeps/linux/arm/fpu_control.h ../../../..//include/
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/arm'
+make -C  ldso
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/ldso'
+ln -fs ../../include/elf.h include/
+ln -fs ../ldso/arm/dl-startup.h include/
+ln -fs ../ldso/arm/dl-syscalls.h include/
+ln -fs ../ldso/arm/dl-sysdep.h include/
+echo "Not building ld-uClibc"
+Not building ld-uClibc
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/ldso'
+make -C  libc
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc'
+make -C  misc
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc'
+make -C  assert
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/assert'
+arm-linux-ar r ../../../libc/libc.a __assert.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/assert'
+make -C  ctype
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/ctype'
+arm-linux-ar r ../../../libc/libc.a isalnum.o isalpha.o isascii.o iscntrl.o isdigit.o isgraph.o islower.o isprint.o ispunct.o isspace.o isupper.o isxdigit.o toascii.o tolower.o toupper.o isblank.o isxlower.o isxupper.o __C_ctype_b.o __C_ctype_tolower.o __C_ctype_toupper.o __ctype_b_loc.o __ctype_tolower_loc.o __ctype_toupper_loc.o __ctype_assert.o isctype.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/ctype'
+make -C  dirent
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/dirent'
+arm-linux-ar r ../../../libc/libc.a alphasort.o closedir.o dirfd.o opendir.o readdir.o rewinddir.o scandir.o seekdir.o telldir.o readdir64.o alphasort64.o scandir64.o readdir_r.o readdir64_r.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/dirent'
+make -C  file
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/file'
+arm-linux-ar r ../../../libc/libc.a lockf.o lockf64.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/file'
+make -C  fnmatch
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/fnmatch'
+arm-linux-ar r ../../../libc/libc.a fnmatch.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/fnmatch'
+make -C  internals
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/internals'
+arm-linux-ar r ../../../libc/libc.a __uClibc_main.o tempname.o errno.o __errno_location.o __h_errno_location.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/internals'
+make -C  mntent
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/mntent'
+arm-linux-ar r ../../../libc/libc.a mntent.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/mntent'
+make -C  syslog
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/syslog'
+arm-linux-ar r ../../../libc/libc.a syslog.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/syslog'
+make -C  time
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/time'
+arm-linux-ar r ../../../libc/libc.a adjtime.o ftime.o clock_gettime.o asctime.o asctime_r.o clock.o ctime.o ctime_r.o gmtime.o gmtime_r.o localtime.o localtime_r.o mktime.o strftime.o strptime.o tzset.o _time_t2tm.o __time_tm.o _time_mktime.o dysize.o timegm.o _time_mktime_tzi.o _time_localtime_tzi.o difftime.o  
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/time'
+make -C  utmp
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/utmp'
+arm-linux-ar r ../../../libc/libc.a utent.o wtent.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/utmp'
+make -C  sysvipc
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/sysvipc'
+arm-linux-ar r ../../../libc/libc.a semget.o semctl.o semop.o shmat.o shmctl.o shmdt.o shmget.o msgctl.o msgget.o msgrcv.o msgsnd.o ftok.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/sysvipc'
+make -C  statfs
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/statfs'
+arm-linux-ar r ../../../libc/libc.a fstatfs64.o statfs64.o statvfs.o statvfs64.o fstatvfs.o fstatvfs64.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/statfs'
+make -C  error
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/error'
+arm-linux-ar r ../../../libc/libc.a error.o err.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/error'
+make -C  ttyent
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/ttyent'
+arm-linux-ar r ../../../libc/libc.a getttyent.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/ttyent'
+make -C  gnu
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/gnu'
+arm-linux-ar r ../../../libc/libc.a obstack.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/gnu'
+make -C  search
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/search'
+arm-linux-ar r ../../../libc/libc.a hsearch.o tsearch.o tfind.o tdelete.o twalk.o tdestroy.o lfind.o lsearch.o insque.o remque.o hcreate_r.o hdestroy_r.o hsearch_r.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/search'
+make -C  locale
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/locale'
+arm-linux-ar r ../../../libc/libc.a setlocale.o localeconv.o _locale_init.o nl_langinfo.o  
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/locale'
+make -C  regex
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/regex'
+arm-linux-ar r ../../../libc/libc.a regex.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/regex'
+make -C  pthread
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/pthread'
+arm-linux-ar r ../../../libc/libc.a no-tsd.o weaks.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/pthread'
+make -C  glob
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/glob'
+arm-linux-ar r ../../../libc/libc.a glob.o glob64.o glob-hooks.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc/glob'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/misc'
+make -C  pwd_grp
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/pwd_grp'
+arm-linux-ar r ../../libc/libc.a fgetpwent_r.o fgetgrent_r.o fgetpwent.o fgetgrent.o getpwnam_r.o getgrnam_r.o getpwuid_r.o getgrgid_r.o getpwuid.o getgrgid.o getpwnam.o getgrnam.o getpw.o getpwent_r.o getgrent_r.o getpwent.o getgrent.o initgroups.o putpwent.o putgrent.o __parsepwent.o __parsegrent.o __pgsreader.o 
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/pwd_grp'
+make -C  stdio
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdio'
+arm-linux-ar r ../../libc/libc.a fclose.o fcloseall.o fdopen.o fgetpos.o fopen.o freopen.o fseeko.o fsetpos.o ftello.o getdelim.o getline.o gets.o getw.o perror.o puts.o putw.o remove.o rewind.o setbuf.o setbuffer.o setlinebuf.o setvbuf.o ungetc.o printf.o vprintf.o vsprintf.o fprintf.o snprintf.o dprintf.o asprintf.o sprintf.o vasprintf.o vdprintf.o vsnprintf.o tmpfile.o tmpnam.o tmpnam_r.o popen.o tempnam.o ctermid.o _READ.o _WRITE.o _adjust_pos.o _fopen.o _fwrite.o _rfill.o _stdio.o _trans2r.o _trans2w.o _wcommit.o _cs_funcs.o _load_inttype.o _store_inttype.o _uintmaxtostr.o _fpmaxtostr.o __fbufsize.o __flbf.o __fpending.o __fpurge.o __freadable.o __freading.o __fsetlocking.o __fwritable.o __fwriting.o _flushlbf.o flockfile.o ftrylockfile.o funlockfile.o clearerr.o feof.o ferror.o fflush.o fgetc.o fgets.o fileno.o fputc.o fputs.o fread.o fwrite.o getchar.o putchar.o clearerr_unlocked.o feof_unlocked.o ferror_unlocked.o fflush_unlocked.o fgetc_unlocked.o fgets_unlocked.o fileno_unlocked.o fputc_unlocked.o fputs_unlocked.o fread_unlocked.o fwrite_unlocked.o getchar_unlocked.o putchar_unlocked.o vfprintf.o _ppfs_init.o _ppfs_prepargs.o _ppfs_setargs.o _ppfs_parsespec.o register_printf_function.o parse_printf_format.o vfscanf.o __scan_cookie.o __psfs_parse_spec.o __psfs_do_numeric.o scanf.o sscanf.o fscanf.o vscanf.o vsscanf.o  fgetpos64.o fopen64.o freopen64.o fseeko64.o fsetpos64.o ftello64.o
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdio'
+make -C  string
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string'
+arm-linux-ar r ../../libc/libc.a basename.o bcopy.o bzero.o dirname.o ffs.o memccpy.o memchr.o memcmp.o memcpy.o memmove.o mempcpy.o memrchr.o 	memset.o rawmemchr.o stpcpy.o stpncpy.o strcasecmp.o strcasestr.o strcat.o strchrnul.o strchr.o strcmp.o strcpy.o strcspn.o strdup.o strlen.o strncasecmp.o strncat.o strncmp.o strncpy.o strndup.o strnlen.o strpbrk.o strrchr.o strsep.o strspn.o strstr.o strtok.o strtok_r.o strerror.o _susv3_strerror_r.o _string_syserrmsgs.o _glibc_strerror_r.o _string_syssigmsgs.o sys_siglist.o strsignal.o psignal.o __xpg_basename.o strlcat.o strlcpy.o sys_errlist.o memmem.o 
+make -C  generic
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string/generic'
+arm-linux-ar r ../../../libc/libc.a memchr.o memcmp.o memcpy.o memmem.o memmove.o mempcpy.o memrchr.o memset.o rawmemchr.o strcat.o strchr.o strchrnul.o strcmp.o strcpy.o strcspn.o strlen.o strncat.o strncmp.o strncpy.o strnlen.o strrchr.o strsep.o strspn.o strstr.o strtok_r.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string/generic'
+make -C  arm
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string/arm'
+arm-linux-ar r ../../../libc/libc.a _memcpy.o bcopy.o bzero.o memcmp.o memcpy.o memmove.o memset.o strcmp.o strlen.o strncmp.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string/arm'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/string'
+make -C  termios
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/termios'
+arm-linux-ar r ../../libc/libc.a tcdrain.o tcflow.o tcflush.o tcsendbreak.o tcsetpgrp.o tcgetpgrp.o isatty.o cfgetospeed.o cfgetispeed.o cfsetospeed.o cfsetispeed.o cfmakeraw.o cfsetspeed.o tcgetattr.o tcgetsid.o tcsetattr.o ttyname.o
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/termios'
+make -C  inet
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/inet'
+arm-linux-ar r ../../libc/libc.a inet_aton.o inet_addr.o inet_ntoa.o inet_makeaddr.o inet_lnaof.o inet_netof.o encodeh.o decodeh.o encoded.o decoded.o lengthd.o encodeq.o decodeq.o lengthq.o encodea.o decodea.o encodep.o decodep.o formquery.o dnslookup.o resolveaddress.o opennameservers.o closenameservers.o resolvename.o gethostbyname.o res_init.o res_query.o gethostbyaddr.o read_etc_hosts_r.o get_hosts_byname_r.o get_hosts_byaddr_r.o gethostbyname2.o getnameinfo.o gethostent.o gethostbyname_r.o gethostbyname2_r.o gethostbyaddr_r.o res_comp.o ns_name.o accept.o bind.o connect.o getpeername.o getsockname.o getsockopt.o listen.o recv.o recvfrom.o recvmsg.o send.o sendmsg.o sendto.o setsockopt.o shutdown.o socket.o socketpair.o  getservice.o getproto.o hostid.o getnetent.o getnetbynm.o getnetbyad.o inet_net.o ntop.o herror.o if_nametoindex.o gai_strerror.o getaddrinfo.o in6_addr.o ether_addr.o ntohl.o
+make -C  rpc
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/inet/rpc'
+arm-linux-ar r ../../../libc/libc.a auth_none.o auth_unix.o authunix_prot.o bindresvport.o clnt_generic.o clnt_perror.o clnt_raw.o clnt_simple.o clnt_tcp.o clnt_udp.o rpc_dtablesize.o get_myaddress.o getrpcent.o getrpcport.o pmap_clnt.o pmap_getmaps.o pmap_getport.o pmap_prot.o pmap_prot2.o pmap_rmt.o rpc_prot.o rpc_commondata.o rpc_callmsg.o svc.o svc_auth.o svc_auth_unix.o svc_raw.o svc_run.o svc_simple.o svc_tcp.o svc_udp.o xdr.o xdr_array.o xdr_float.o xdr_mem.o xdr_rec.o xdr_reference.o xdr_stdio.o rtime.o clnt_unix.o svc_unix.o create_xid.o xdr_intXX_t.o rcmd.o rexec.o sa_len.o ruserpass.o rpc_thread.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/inet/rpc'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/inet'
+make -C  signal
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/signal'
+arm-linux-ar r ../../libc/libc.a allocrtsig.o killpg.o raise.o sigaction.o sigaddset.o sigandset.o sigblock.o sigdelset.o sigempty.o sigfillset.o siggetmask.o sighold.o sigignore.o sigintr.o sigisempty.o sigismem.o sigjmp.o signal.o sigorset.o sigpause.o sigrelse.o sigset.o sigsetmask.o sigsetops.o sysv_signal.o sigwait.o
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/signal'
+make -C  stdlib
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdlib'
+arm-linux-ar r ../../libc/libc.a abs.o labs.o atoi.o atol.o strtol.o strtoul.o _stdlib_strto_l.o qsort.o bsearch.o llabs.o atoll.o strtoll.o strtoull.o _stdlib_strto_ll.o atof.o   strtod.o strtof.o strtold.o __strtofpmax.o __fp_range_check.o  on_exit.o __cxa_atexit.o __cxa_finalize.o __exit_handler.o exit.o old_atexit.o abort.o getenv.o mkdtemp.o mktemp.o realpath.o mkstemp.o mkstemp64.o rand.o random.o random_r.o setenv.o system.o div.o ldiv.o lldiv.o getpt.o ptsname.o grantpt.o unlockpt.o gcvt.o drand48-iter.o jrand48.o jrand48_r.o lrand48.o lrand48_r.o mrand48.o mrand48_r.o nrand48.o nrand48_r.o rand_r.o srand48.o srand48_r.o seed48.o seed48_r.o valloc.o drand48.o drand48_r.o erand48.o erand48_r.o
+make -C  malloc-simple
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdlib/malloc-simple'
+arm-linux-ar r ../../../libc/libc.a malloc.o realloc.o free.o calloc.o memalign.o
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdlib/malloc-simple'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/stdlib'
+make -C  sysdeps
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps'
+make -C  linux
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux'
+make -C common
+make[7]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/common'
+arm-linux-ar r ../../../../libc/libc.a __rt_sigtimedwait.o __socketcall.o __syscall_fcntl.o __syscall_fcntl64.o __syscall_ipc.o __syscall_rt_sigaction.o __syscall_sigaction.o _exit.o access.o acct.o adjtimex.o alarm.o bdflush.o capget.o capset.o chdir.o chmod.o chown.o chroot.o close.o cmsg_nxthdr.o creat64.o create_module.o delete_module.o dup.o dup2.o epoll.o execve.o fchdir.o fchmod.o fchown.o fdatasync.o flock.o fork.o fstat.o fstat64.o fstatfs.o fsync.o ftruncate.o ftruncate64.o get_kernel_syms.o getcwd.o getdents.o getdents64.o getdirname.o getdnnm.o getdtablesize.o getegid.o geteuid.o getgid.o getgroups.o gethstnm.o getitimer.o getpagesize.o getpgid.o getpgrp.o getpid.o getppid.o getpriority.o getresgid.o getresuid.o getrlimit.o getrlimit64.o getrusage.o getsid.o gettimeofday.o getuid.o init_module.o ioctl.o ioperm.o iopl.o kill.o klogctl.o lchown.o link.o llseek.o longjmp.o lseek.o lstat.o lstat64.o madvise.o mkdir.o mkfifo.o mincore.o mknod.o mlock.o mlockall.o mmap.o mmap64.o modify_ldt.o mount.o mprotect.o mremap.o msync.o munlock.o munlockall.o munmap.o nanosleep.o nice.o noophooks.o ntp_gettime.o open.o open64.o pause.o personality.o pipe.o pivot_root.o poll.o prctl.o pread_write.o ptrace.o query_module.o quotactl.o read.o readlink.o readv.o reboot.o rename.o rmdir.o sched_get_priority_max.o sched_get_priority_min.o sched_getparam.o sched_getscheduler.o sched_rr_get_interval.o sched_setparam.o sched_setscheduler.o sched_yield.o select.o sendfile.o sendfile64.o setdomainname.o setegid.o seteuid.o setfsgid.o setfsuid.o setgid.o setgroups.o sethostname.o setitimer.o setpgid.o setpgrp.o setpriority.o setregid.o setresgid.o setresuid.o setreuid.o setrlimit.o setrlimit64.o setsid.o settimeofday.o setuid.o sigaltstack.o sigpending.o sigprocmask.o sigsuspend.o stat.o stat64.o statfs.o stime.o swapoff.o swapon.o symlink.o sync.o sysctl.o sysfs.o sysinfo.o time.o times.o truncate.o truncate64.o ulimit.o umask.o umount.o umount2.o uname.o unlink.o uselib.o ustat.o utime.o utimes.o vfork.o vhangup.o wait.o wait3.o wait4.o waitpid.o write.o writev.o xattr.o xstatconv.o 
+make[7]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/common'
+make -C arm
+make[7]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/arm'
+arm-linux-ar r ../../../../libc/libc.a __longjmp.o vfork.o clone.o setjmp.o bsd-setjmp.o bsd-_setjmp.o sigrestorer.o mmap64.o  brk.o syscall.o ioperm.o sigaction.o
+cp crt0.o crt1.o ../../../../lib/
+make[7]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux/arm'
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps/linux'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/sysdeps'
+make -C  unistd
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/unistd'
+arm-linux-ar r ../../libc/libc.a sleep.o usleep.o ualarm.o getpass.o sysconf.o getlogin.o fpathconf.o confstr.o pathconf.o swab.o usershell.o getsubopt.o getopt.o execl.o execv.o execle.o execlp.o execvp.o __exec_alloc.o
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc/unistd'
+arm-linux-ranlib libc.a
+install -d ../lib
+rm -f ../lib/libc.a
+install -m 644 libc.a ../lib
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libc'
+make -C  libcrypt
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libcrypt'
+arm-linux-ar r libcrypt.a crypt.o des.o md5.o
+install -d ../lib
+rm -f ../lib/libcrypt.a
+install -m 644 libcrypt.a ../lib
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libcrypt'
+make -C  libresolv
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libresolv'
+arm-linux-ar r libresolv.a resolv.o
+install -d ../lib
+rm -f ../lib/libresolv.a
+install -m 644 libresolv.a ../lib
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libresolv'
+make -C  libnsl
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libnsl'
+arm-linux-ar r libnsl.a nsl.o
+install -d ../lib
+rm -f ../lib/libnsl.a
+install -m 644 libnsl.a ../lib
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libnsl'
+make -C  libutil
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libutil'
+arm-linux-ar r libutil.a login.o login_tty.o logout.o logwtmp.o openpty.o
+install -d ../lib
+rm -f ../lib/libutil.a
+install -m 644 libutil.a ../lib/
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libutil'
+make -C  libm
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libm'
+arm-linux-ar r libm.a e_acos.o e_acosh.o e_asin.o e_atan2.o e_atanh.o e_cosh.o e_exp.o e_fmod.o e_gamma.o e_gamma_r.o e_hypot.o e_j0.o e_j1.o e_jn.o e_lgamma.o e_lgamma_r.o e_log.o e_log10.o e_pow.o e_remainder.o e_rem_pio2.o e_scalb.o e_sinh.o e_sqrt.o k_cos.o k_rem_pio2.o k_sin.o k_standard.o k_tan.o s_asinh.o s_atan.o s_cbrt.o s_ceil.o s_copysign.o s_cos.o s_erf.o s_expm1.o s_fabs.o s_finite.o s_floor.o s_frexp.o s_ilogb.o s_ldexp.o s_lib_version.o s_log1p.o s_logb.o s_matherr.o s_modf.o s_nextafter.o s_rint.o s_scalbn.o s_signgam.o s_significand.o s_sin.o s_tan.o s_tanh.o w_acos.o w_acosh.o w_asin.o w_atan2.o w_atanh.o w_cabs.o w_cosh.o w_drem.o w_exp.o w_fmod.o w_gamma.o w_gamma_r.o w_hypot.o w_j0.o w_j1.o w_jn.o w_lgamma.o w_lgamma_r.o w_log.o w_log10.o w_pow.o w_remainder.o w_scalb.o w_sinh.o w_sqrt.o w_sqrtf.o fpmacros.o nan.o s_ceilf.o s_floorf.o
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libm'
+make -C  libpthread
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread'
+make -C  linuxthreads
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread/linuxthreads'
+arm-linux-ar r ../libpthread.a attr.o cancel.o condvar.o errno.o events.o join.o lockfile.o manager.o mutex.o oldsemaphore.o pt-machine.o ptfork.o pthread.o ptlongjmp.o rwlock.o semaphore.o signals.o specific.o spinlock.o wrapsyscall.o
+make -C  sysdeps
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread/linuxthreads/sysdeps'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread/linuxthreads/sysdeps'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread/linuxthreads'
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/libpthread'
+make -C  librt
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/librt'
+arm-linux-ar r librt.a mq_open.o mq_close.o mq_unlink.o mq_getsetattr.o mq_send.o mq_receive.o mq_notify.o timer_create.o timer_delete.o timer_settime.o timer_gettime.o timer_getoverr.o
+install -d ../lib
+rm -f ../lib/librt.a
+install -m 644 librt.a ../lib/
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc/librt'
+
+Not building shared libraries...
+
+
+Finally finished compiling...
+
+make[3]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/uClibc'
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+make -j1 -C ../include
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make make_links                        || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+Making symlinks in lib/
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ -z "" ] ||\
+		make -j1  || exit $?
+make -j1 -C ../include
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make make_links                        || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+Making symlinks in lib/
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ -z "" ] ||\
+		make -j1  || exit $?
+make -j1 -C ../include
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make make_links                        || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+Making symlinks in lib/
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ -z "" ] ||\
+		make -j1  || exit $?
+make -j1 -C ../include
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make make_links                        || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+Making symlinks in lib/
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ -z "/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop" ] ||\
+		make -j1 /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+[ ! -d "/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop" ] || ( touch /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop/.sgbuilt_lib && make -j1 -C /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop ) || exit $?
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+make -j1 -C ../include
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make make_links                        || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+Making symlinks in lib/
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/lib'
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+find . -depth -type l -a ! -name Makefile | xargs rm > /dev/null 2>&1 || exit 0
+find . -depth -type d | grep -v .svn | xargs rmdir > /dev/null 2>&1 || exit 0
+Making symlinks in include/
+Making include/c++ symlink to compiler c++ includes
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/include'
+make[1]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user'
+make -j1 /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/vendors/NXP/LPC2468/. busybox games init microwin mtd-utils ramimage sysutils || exit $?
+make[2]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user'
+[ ! -d "/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop" ] || ( touch /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop/.sgbuilt_user && make -j1 -C /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/prop ) || exit $?
+make[2]: Nothing to be done for `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/vendors/NXP/LPC2468/.'.
+[ ! -d "busybox" ] || ( touch busybox/.sgbuilt_user && make -j1 -C busybox ) || exit $?
+make[3]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/busybox'
+sh ./mkconfig > .config.tmp
+if cmp -s .config.mkconfig .config.tmp ; \
+	then \
+		rm -f .config.tmp ; \
+	else \
+		make clean; \
+		mv -f .config.tmp .config.mkconfig ; \
+	fi
+make[3]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/busybox'
+[ ! -d "games" ] || ( touch games/.sgbuilt_user && make -j1 -C games ) || exit $?
+make[3]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/games'
+for i in  dummy ; do \
+		[ $i = dummy ] || make -C $i || exit  ; \
+	done
+make[3]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/games'
+[ ! -d "init" ] || ( touch init/.sgbuilt_user && make -j1 -C init ) || exit $?
+make[3]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/init'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/init'
+[ ! -d "microwin" ] || ( touch microwin/.sgbuilt_user && make -j1 -C microwin ) || exit $?
+make[3]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin'
+[ -d src/lib ] || mkdir src/lib
+[ -d src/bin ] || mkdir src/bin
+make -C src TOOLSPREFIX=arm-linux- all || exit 1
+make[4]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src'
+make -C drivers
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/drivers'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/drivers'
+make -C mwin
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin'
+make -C bmp
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/bmp'
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/bmp'
+make -C mwobjects
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/mwobjects'
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/mwobjects'
+make -C winlib
+make[6]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/winlib'
+make[6]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/winlib'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin'
+make -C engine
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/engine'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/engine'
+make -C fonts
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/fonts'
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/fonts'
+make -C nanox
+make[5]: Entering directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/nanox'
+Linking /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/bin/nano-X ...
+ucfront-gcc arm-linux-gcc  -Os                     -g -fomit-frame-pointer -pipe -msoft-float -fno-common -fno-builtin -Wall   -DEMBED -D__PIC__ -fpic -msingle-pic-base -Dlinux -D__linux__ -Dunix -D__uClinux__ -fpic -I. -I/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/include -fpic -I. -I/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/include -Wl,--fatal-warnings -Wl,-elf2flt -msoft-float -D__PIC__ -fpic -msingle-pic-base -Wl,--fatal-warnings -Wl,-elf2flt -msoft-float -D__PIC__ -fpic -msingle-pic-base -L/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib -L/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib -o /home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/bin/nano-X srvmain.o srvfunc.o srvutil.o srvevent.o srvclip.o srvnet.o -lmwengine -lmwdrivers -lmwfonts  -lz 
+make[5]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/nanox'
+make[4]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src'
+make[3]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin'
+make[2]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user'
+make[1]: Leaving directory `/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user'

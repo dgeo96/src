@@ -1,0 +1,1 @@
+#undef  CONFIG_82C710_MOUSE

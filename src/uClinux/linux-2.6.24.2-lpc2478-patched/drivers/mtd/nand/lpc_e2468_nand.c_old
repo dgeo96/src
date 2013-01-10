@@ -1,0 +1,219 @@
+/* 
+	EOM2468MTDMAP.C
+	===============
+	
+	information taken from: http://www.linux-mtd.infradead.org/tech/mtdnand/book1.html
+	
+*/
+
+#include <linux/config.h>
+#include <linux/module.h>
+#include <linux/types.h>
+#include <linux/init.h>
+#include <linux/kernel.h>
+#include <linux/fs.h>
+#include <linux/major.h>
+#include <linux/root_dev.h>
+#include <linux/mtd/mtd.h>
+#include <linux/mtd/map.h>
+#include <linux/mtd/partitions.h>
+#include <linux/mtd/nand.h>
+#include <asm/io.h>
+
+#include <asm/arch/hardware.h>
+
+#define m_reg_read(reg) (*(volatile unsigned long *)(reg))
+#define m_reg_write(reg, data) ((*(volatile unsigned long *)(reg)) = (volatile unsigned long)(data))
+#define m_reg_bfs(reg, data) (*(volatile unsigned long *)(reg)) |= (data)
+#define m_reg_bfc(reg, data) (*(volatile unsigned long *)(reg)) &= ~(data)
+
+#define SHOW_DEBUG					/* show some debug info */
+
+/****************************************************************************
+	Board configuration
+	===================
+*/
+#define CHIP_PHYS_ADD 				0x81000000L   /* CS1: 0x81000000 - 0x81FFFFFF */
+#define CLE_ADRR_BIT 				0x00040000L
+#define ALE_ADRR_BIT 				0x00080000L
+#define CHIP_DELAY 0 /***???**/
+
+/****************************************************************************
+	MTD INFO
+	========
+*/
+static struct mtd_info *board_mtd;
+static unsigned long baseaddr;	/* it must be equal to CHIP_PHYS_ADD since there isn't MMU */
+
+/****************************************************************************
+	NAND FLASH Partitions		8 MB for kernel image
+	=====================     120 MB for flash data
+	                         =========================
+							  128 MB TOTAL
+*/
+#define NUM_PARTITIONS 2
+static struct mtd_partition partition_info[] = {
+	{ .name = "Kernel image",
+	  .offset =  0,
+	  .size =    8 * 1024L * 1024L },	/* reserve 8MB for linux.bin & romfs.bin images */
+	{ .name = "Flash data",
+	  .offset =  8 * 1024L * 1024L,
+	  .size =  120 * 1024L * 1024L},	/* the rest of the FLASH is for data storage */
+};
+
+/****************************************************************************
+   Read NAND READY flag
+   ====================
+   REQUIERES JUMPER J19 SET: "P2.12 = NAND_FLASH_RDY"
+*/
+int board_dev_ready(struct mtd_info *mtd)
+{
+	return (m_reg_read( FIO2PIN ) & (1 << 12)) ? 1 : 0;
+}
+
+/****************************************************************************
+	Address lines based control metod
+	=================================
+ 	The nCE pin is driven by a chip select decoder.
+*/
+static void board_hwcontrol(struct mtd_info *mtd, int cmd)
+{
+	struct nand_chip *this = (struct nand_chip *) mtd->priv;
+	switch(cmd){
+		case NAND_CTL_SETCLE: 
+			this->IO_ADDR_W= (void *)((unsigned long) this->IO_ADDR_W | CLE_ADRR_BIT);
+			break;
+		case NAND_CTL_CLRCLE: 
+			this->IO_ADDR_W= (void *)((unsigned long) this->IO_ADDR_W & ~CLE_ADRR_BIT);
+			break;
+		case NAND_CTL_SETALE: 
+			this->IO_ADDR_W= (void *)((unsigned long) this->IO_ADDR_W | ALE_ADRR_BIT);
+			break;
+		case NAND_CTL_CLRALE: 
+			this->IO_ADDR_W= (void *)((unsigned long) this->IO_ADDR_W & ~ALE_ADRR_BIT);
+			break;
+	}
+}
+
+/****************************************************************************
+	Init function
+	=============
+	The init function allocates memory and sets up all the board specific 
+	parameters and function pointers. When everything is set up nand_scan() 
+	is called. This function tries to detect and identify then chip. 
+	If a chip is found all the internal data fields are initialized accordingly. 
+	The structure(s) have to be zeroed out first and then filled with the 
+	neccecary information about the device.
+*/
+int __init board_init (void)
+{
+	struct nand_chip *this;
+	int err = 0;
+
+#ifdef SHOW_DEBUG
+	printk ("NAND: INIT\n");
+#endif
+
+	/* force p2.12 = NAND_FLASH_RDY IN INPUT MODE  */
+	m_reg_bfc( PINSEL4, 0x03000000 ); /* set GPIO MODE */
+	m_reg_bfc( FIO2DIR, (1 << 12) );  /* set INPUT DIR */
+	
+	
+	/* Allocate memory for MTD device structure and private data */
+	board_mtd = kmalloc (sizeof(struct mtd_info) + sizeof (struct nand_chip), GFP_KERNEL);
+	if (!board_mtd) {
+		printk ("NAND: Unable to allocate NAND MTD device structure.\n");
+		err = -ENOMEM;
+		goto out;
+	}
+
+	/* Initialize structures */
+	memset ((char *) board_mtd, 0, sizeof(struct mtd_info) + sizeof(struct nand_chip));
+
+	/* map physical adress */
+	baseaddr = (unsigned long)ioremap(CHIP_PHYS_ADD, 1024);
+	if(!baseaddr){
+		printk("NAND: Ioremap to access NAND chip failed\n");
+		err = -EIO;
+		goto out_mtd;
+	}
+
+	/* Get pointer to private data (skip MTD_INFO) */
+	this = (struct nand_chip *) (((char *) board_mtd) + sizeof(struct mtd_info));
+	
+	/* Link the private data with the MTD structure */
+	board_mtd->priv = this;
+
+	/* Set address of NAND IO lines */
+	this->IO_ADDR_R = (void *) baseaddr;
+	this->IO_ADDR_W = (void *) baseaddr;
+	/* Reference hardware control function */
+	this->hwcontrol = board_hwcontrol;
+
+	/* Set command delay time, see datasheet for correct value */
+	this->chip_delay = CHIP_DELAY;
+	
+	/* Assign the device ready function, if available */
+	this->dev_ready = board_dev_ready;
+	
+	this->eccmode = NAND_ECC_SOFT;
+
+	/* Scan to find existance of the device */
+	if (nand_scan (board_mtd, 1)) {
+		err = -ENXIO;
+		goto out_ior;
+	}
+	
+	add_mtd_partitions( board_mtd, partition_info, NUM_PARTITIONS );
+
+#ifdef SHOW_DEBUG
+	printk ("NAND: LOADED OK\n");
+	if( board_dev_ready( board_mtd ) ){
+		printk ("NAND: P2.12= READY\n");
+	}else{
+		printk ("NAND: P2.12= NOT READY\n");
+	};	
+#endif
+		
+	goto out;
+
+out_ior:
+	iounmap((void *)baseaddr);
+out_mtd:
+	kfree (board_mtd);
+	board_mtd= NULL;
+out:
+	return err;
+}
+module_init(board_init);
+
+/****************************************************************************/
+			
+#ifdef MODULE
+static void __exit board_exit (void)
+{
+
+#if SHOW_DEBUG
+	printk ("NAND: EXIT\n");
+#endif
+
+	if( board_mtd != NULL ){
+		/* Release resources, unregister device */
+		nand_release (board_mtd);
+	
+		/* unmap physical adress */
+		iounmap((void *)baseaddr);
+		
+		/* Free the MTD device structure */
+		kfree (board_mtd);
+	}
+}
+module_exit(board_exit);
+#endif
+
+/****************************************************************************/
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Gabriel Dubatti, Ivan Vasilev");
+MODULE_DESCRIPTION("Map driver for Olimex LPC-E2468 board");
+/****************************************************************************/
+		

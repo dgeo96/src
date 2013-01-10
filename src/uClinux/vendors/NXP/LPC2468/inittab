@@ -1,0 +1,20 @@
+# inet:unknown:/bin/inetd
+# boa:unknown:/bin/boa
+
+# Boot-time system configuration/initialization script.
+# This is run first except when booting in single-user mode.
+#
+::sysinit:/etc/rc
+
+# Start an "askfirst" shell on the console (whatever that may be)
+::respawn:-/bin/sh
+
+# Stuff to do when restarting the init process
+::restart:/sbin/init
+
+
+# Stuff to do before rebooting
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r
+::shutdown:/sbin/swapoff -a
+

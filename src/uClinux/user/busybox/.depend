@@ -1,0 +1,1065 @@
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/lash.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/lash.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/lash/pipe/n/redirects.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/lash/job/control.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/editing.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/extra/quiet.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/hush.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/hush.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/editing.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/extra/quiet.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/cmdedit.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/cmdedit.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/../shell/cmdedit.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/../shell/cmdedit.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/tab/completion.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/editing.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/username/completion.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/getusername/and/homedir.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/history.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/nonprintable/inverse/put.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/savehistory.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/ash.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/ash.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/job/control.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/alias.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/optimize/for/size.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/math/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/cmdcmd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/getopts.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/extra/quiet.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/mail.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/math/support/64.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ash/random/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/savehistory.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/editing.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/tab/completion.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/msh.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/shell/msh.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/command/editing.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/extra/quiet.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sh/standalone/shell.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/local.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/local.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipc/syslog.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipc/syslog/buffer/size.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/rotate/logfile.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/remote.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/remote.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/logger.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/logger.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/syslogd.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/email.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/email.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/logread.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/logread.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/logread/reduced/locking.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/klogd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/klogd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/config.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/config.c \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/remote/log.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/smtp/smtpclient.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/syslogd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/sysklogd/syslogd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/flatfsd/flatfsd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/remote/log.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/smtp/smtpclient.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipc/syslog.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/rotate/logfile.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/find.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/find.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/type.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/perm.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/mtime.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/xdev.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/newer.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/find/inum.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/xargs.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/xargs.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/xargs/support/confirmation.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/xargs/support/quotes.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/xargs/support/termopt.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/xargs/support/zero/term.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/grep.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/findutils/grep.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/grep/context.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/grep/egrep/alias.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/rmdir.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/rmdir.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/printf.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/printf.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chown.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chown.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tty.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tty.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/who.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/who.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chgrp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chgrp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/env.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/env.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/od.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/od.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sync.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sync.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/flatfsd/flatfsd.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/date.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/date.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/date/isofmt.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uudecode.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uudecode.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mv.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mv.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dos2unix.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dos2unix.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/rm.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/rm.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/seq.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/seq.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uname.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uname.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/pwd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/pwd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/ln.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/ln.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mkdir.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mkdir.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/touch.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/touch.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cmp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cmp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dirname.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/dirname.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/id.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/id.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/ls.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/ls.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/timestamps.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/sortfiles.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/followlinks.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/human/readable.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/filetypes.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/color.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/autowidth.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/recursive.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ls/username.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/watch.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/watch.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/usleep.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/usleep.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/stty.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/stty.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/true.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/true.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sleep.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sleep.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/sleep.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/yes.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/yes.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uniq.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uniq.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/df.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/df.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/human/readable.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/logname.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/logname.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tail.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tail.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/tail.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/basename.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/basename.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/du.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/du.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/human/readable.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/du/defalt/blocksize/1k.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uuencode.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/uuencode.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/head.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/head.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/head.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cat.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cat.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tee.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tee.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tee/use/block/io.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/echo.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/echo.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/echo.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/xgetoptfile_sort_uniq.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/xgetoptfile_sort_uniq.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/cp_mv_stat.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/cp_mv_stat.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/getopt_mk_fifo_nod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/libcoreutils/getopt_mk_fifo_nod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cal.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cal.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/md5_sha1_sum.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/md5_sha1_sum.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/md5/sha1/sum/check.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/md5sum.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/sha1sum.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/whoami.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/whoami.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sort.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/sort.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/hostid.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/hostid.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/false.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/false.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chmod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chmod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/test.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/test.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/test/64.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cut.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cut.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mkfifo.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mkfifo.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/cp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mknod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/mknod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/realpath.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/realpath.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/wc.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/wc.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/install.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/install.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chroot.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/chroot.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tr.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/tr.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/expr.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/expr.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/fold.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/fold.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/length.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/coreutils/length.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/deluser.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/deluser.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/login.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/login.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/u/w/tmp.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/securetty.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/wheel/group.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/adduser.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/adduser.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/addgroup.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/getty.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/getty.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/syslogd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/u/w/tmp.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/su.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/su.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/u/w/tmp.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/vlock.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/vlock.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/delline.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/delline.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/passwd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/passwd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/sulogin.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/sulogin.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/delgroup.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/delgroup.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/deluser.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/addgroup.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/loginutils/addgroup.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/adduser.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/openvt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/openvt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/loadfont.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/loadfont.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/dumpkmap.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/dumpkmap.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/chvt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/chvt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/setkeycodes.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/setkeycodes.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/reset.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/reset.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/loadkmap.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/loadkmap.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/clear.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/clear.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/deallocvt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/console-tools/deallocvt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/mesg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/mesg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/halt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/halt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/flatfsd/flatfsd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/init.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/poweroff.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/poweroff.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/init.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/init_shared.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/init_shared.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/initrd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/init.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/reboot.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/reboot.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/flatfsd/flatfsd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/init.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/init.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/init/init.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/syslogd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/init/coredumps.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/user/flatfsd/flatfsd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/extra/quiet.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/use/inittab.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/inittab.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/initrd.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/crontab.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/crontab.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/dc.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/dc.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/strings.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/strings.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/devfsd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/devfsd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/devfsd/modload.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/devfsd/verbose.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/debug.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/devfsd/fg/np.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/file.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/modules/devfs.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/adjtimex.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/adjtimex.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/hdparm.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/hdparm.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/get/identity.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/hdio/getset/dma.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/hdio/unregister/hwif.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/hdio/scan/hwif.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/hdio/tristate/hwif.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hdparm/hdio/drive/reset.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/time.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/time.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/crond.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/crond.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/crond/call/sendmail.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/mt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/mt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/rx.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/rx.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/last.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/last.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/watchdog.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/watchdog.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/makedevs.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/miscutils/makedevs.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/losetup.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/losetup.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdisk.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdisk.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sun/label.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sgi/label.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/aix/label.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/osf/label.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fdisk/writable.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fdisk/advanced.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/weird/partition/types.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fdisk/blksize.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/freeramdisk.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/freeramdisk.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/umount.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/umount.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mount/force.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mount/loop.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mtab/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fsck_minix.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fsck_minix.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/minix2.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/hexdump.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/hexdump.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mkswap.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mkswap.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdflush.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdflush.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/hwclock.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/hwclock.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/hwclock/longoptions.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mount.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mount.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/nfsmount.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mount/loop.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mtab/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/nfsmount.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/nfsmount.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/pivot_root.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/pivot_root.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/rdate.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/rdate.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mkfs_minix.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/mkfs_minix.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/minix2.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/more.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/more.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/use/termios.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/dmesg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/dmesg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/swaponoff.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/swaponoff.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/getopt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/getopt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdformat.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fdformat.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fbset.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/util-linux/fbset.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fbset/fancy.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fbset/readmode.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/modprobe.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/modprobe.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/2/6/modules.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/lsmod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/lsmod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/check/tainted/module.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/query/module/interface.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/insmod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/insmod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/2/4/modules.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/2/6/modules.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/insmod/loadinkmem.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/insmod/version/checking.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/use/list.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/list/archtype.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/use/single.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/use/plt/entries.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/use/got/entries.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/use/plt/list.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/got/entry/size.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/plt/entry/size.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/check/tainted/module.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/insmod/ksymoops/symbols.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/insmod/load/map.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/insmod/load/map/full.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/rmmod.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/modutils/rmmod.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/2/6/modules.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/query/module/interface.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/pipe_progress.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/pipe_progress.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/mktemp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/mktemp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/which.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/which.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/readlink.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/readlink.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/start_stop_daemon.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/start_stop_daemon.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/run_parts.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/debianutils/run_parts.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/dpkg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/dpkg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/bz2.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/gzip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/gzip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/gunzip.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/rpm2cpio.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/rpm2cpio.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/bunzip2.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/bunzip2.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/dpkg_deb.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/dpkg_deb.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/bz2.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/rpm.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/rpm.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_align.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_align.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/seek_by_jump.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/seek_by_jump.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/unarchive/tape.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/check_header_gzip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/check_header_gzip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/unpack_ar_archive.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/unpack_ar_archive.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/archive_xread_all_eof.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/archive_xread_all_eof.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_skip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_skip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_bunzip2.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_bunzip2.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/archive_xread_all.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/archive_xread_all.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_to_stdout.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_to_stdout.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/find_list_entry.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/find_list_entry.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_list.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_list.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/gnu/extensions.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/oldgnu/compatability.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_list.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_list.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_cpio.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_cpio.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/init_handle.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/init_handle.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/seek_by_char.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/seek_by_char.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_all.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_all.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_all.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_all.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_to_buffer.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_extract_to_buffer.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar_bz2.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar_bz2.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/open_transformer.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/open_transformer.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_skip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/data_skip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_list_reassign.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_list_reassign.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/deb/tar/bz2.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_uncompress.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_uncompress.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_unzip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/decompress_unzip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_reject_list.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/filter_accept_reject_list.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_ar.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_ar.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ar/long/filenames.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar_gz.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/get_header_tar_gz.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_verbose_list.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/libunarchive/header_verbose_list.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/uncompress.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/uncompress.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/ar.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/ar.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/gunzip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/gunzip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/gunzip/uncompress.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/unzip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/unzip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/tar.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/tar.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/create.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/from.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/gzip.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/compress.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/bzip2.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tar/long/options.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/cpio.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/archival/cpio.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ipaddr.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ipaddr.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/inetd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/inetd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/inetd/support/biltin/echo.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/inetd/support/biltin/discard.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/inetd/support/biltin/time.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/inetd/support/biltin/daytime.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/inetd/support/biltin/chargen.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/traceroute.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/traceroute.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/traceroute/verbose.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/traceroute.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/traceroute/so/debug.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ftpgetput.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ftpgetput.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ftpget.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/ftpput.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ping6.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ping6.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/ping6.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/ping.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nc.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nc.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ping.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ping.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/fancy/ping.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/telnet.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/telnet.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/telnet/ttype.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/telnet/autologin.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/autowidth.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/libnetlink.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/libnetlink.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ll_addr.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ll_addr.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iproute.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iproute.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ip_parse_common_args.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ip_parse_common_args.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iplink.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iplink.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/utils.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/utils.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ipaddress.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/ipaddress.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iptunnel.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/libiproute/iptunnel.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ip.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ip.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ip/address.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ip/route.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ip/link.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ip/tunnel.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nameif.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nameif.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/arping.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/arping.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iproute.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iproute.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/netstat.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/netstat.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/route.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iplink.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iplink.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/telnetd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/telnetd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/login.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/telnetd/inetd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/devpts.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ipcalc.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ipcalc.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipcalc/fancy.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/httpd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/httpd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/lfs.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/usage/from/inetd/only.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/basic/auth.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/cgi.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/config/with/mime/types.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/encode/url/str.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/set/remote/port/to/env.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/auth/md5.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/reload/config/sighup.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/httpd/setuid.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nslookup.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/nslookup.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/route.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/route.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/vconfig.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/vconfig.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ifupdown.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ifupdown.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifupdown/mapping.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifupdown/ip.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifupdown/ipx.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifupdown/ipv6.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifupdown/ipv4.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iptunnel.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/iptunnel.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/tftp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/tftp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tftp/blocksize.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tftp/debug.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tftp/get.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/tftp/put.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ifconfig.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/ifconfig.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifconfig/slip.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifconfig/broadcast/plus.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifconfig/hw.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifconfig/memstart/ioaddr/irq.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ifconfig/status.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/wget.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/wget.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/wget/statusbar.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/wget/authentication.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/wget/ip6/literal.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/hostname.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/networking/hostname.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libpwdgrp/pwd_grp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libpwdgrp/pwd_grp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/shadow_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/shadow_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/process_escape_sequence.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/process_escape_sequence.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/obscure.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/obscure.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/module_syscalls.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/module_syscalls.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/printf.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/printf.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getug.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getug.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/herror_msg_and_die.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/herror_msg_and_die.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_write.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_write.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/remove_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/remove_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_console.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_console.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/wfopen_input.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/wfopen_input.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/inet_common.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/inet_common.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/last_char_is.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/last_char_is.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_terminal_width_height.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_terminal_width_height.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/autowidth.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_strncpy.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_strncpy.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fflush_stdout_and_exit.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fflush_stdout_and_exit.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/change_identity.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/change_identity.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/hash_fd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/hash_fd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/sha1sum.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/md5sum.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/full_write.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/full_write.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/pw_encrypt.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/pw_encrypt.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/sha1/passwords.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/login.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/login.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/herror_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/herror_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fclose_nonstdin.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fclose_nonstdin.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getgrnam.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getgrnam.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/warn_ignoring_args.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/warn_ignoring_args.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/mtab_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/mtab_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mtab/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/mtab/filename.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/mtab.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/mtab.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgethostbyname2.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgethostbyname2.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/copy_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/copy_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/preserve/hardlinks.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/default_error_retval.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/default_error_retval.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/parse_mode.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/parse_mode.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/qmodule.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/qmodule.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/messages.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/messages.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/concat_path_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/concat_path_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/run_shell.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/run_shell.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/simplify_path.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/simplify_path.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xfuncs.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xfuncs.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/parse_number.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/parse_number.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xregcomp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xregcomp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/device_open.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/device_open.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetcwd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetcwd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_nomsg_and_die.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_nomsg_and_die.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/concat_subpath_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/concat_subpath_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/setup_environment.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/setup_environment.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/copyfd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/copyfd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/error_msg_and_die.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/error_msg_and_die.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/ask_confirmation.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/ask_confirmation.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fgets_str.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/fgets_str.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/dump.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/dump.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/dump.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/speed_table.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/speed_table.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/inode_hash.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/inode_hash.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/isdirectory.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/isdirectory.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_nomsg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_nomsg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_line_from_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/get_line_from_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getpwnam.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getpwnam.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/procps.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/procps.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/cpu/usage/percentage.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/interface.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/interface.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/inet_common.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/make_directory.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/make_directory.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/recursive_action.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/recursive_action.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/print_file.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/print_file.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/verror_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/verror_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/correct_password.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/correct_password.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/shadowpasswds.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/trim.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/trim.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/chomp.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/chomp.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vperror_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vperror_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vdprintf.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vdprintf.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/human_readable.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/human_readable.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getpwuid.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getpwuid.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/loop.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/loop.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/create_icmp6_socket.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/create_icmp6_socket.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/ipv6.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetularg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetularg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_msg_and_die.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/perror_msg_and_die.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_root_device.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_root_device.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/devfs.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_read.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_read.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vfork_daemon_rexec.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vfork_daemon_rexec.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/kernel_version.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/kernel_version.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/bb_asprintf.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/bb_asprintf.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_mount_point.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_mount_point.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getgrgid.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/my_getgrgid.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/syscalls.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/syscalls.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/run_parts.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/run_parts.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/llist_add_to.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/llist_add_to.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/unarchive.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xconnect.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xconnect.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/pwd2spwd.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/pwd2spwd.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/shadow_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/shadow_.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/getopt_ulflags.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/getopt_ulflags.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_strtol.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/safe_strtol.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetlarg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgetlarg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_pid_by_name.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/find_pid_by_name.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/error_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/error_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/restricted_shell.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/restricted_shell.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/wfopen.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/wfopen.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgethostbyname.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xgethostbyname.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/create_icmp_socket.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/create_icmp_socket.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vherror_msg.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/vherror_msg.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xreadlink.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/xreadlink.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/skip_whitespace.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/skip_whitespace.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/full_read.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/full_read.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/read_package_field.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/libbb/read_package_field.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/top.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/top.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/cpu/usage/percentage.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/use/termios.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/ps.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/ps.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/selinux.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/uptime.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/uptime.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/renice.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/renice.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/pidof.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/pidof.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/free.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/free.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/kill.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/kill.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/killall.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/sysctl.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/procps/sysctl.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/awk.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/awk.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/awk/math.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/sed.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/sed.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/clean/up.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/patch.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/patch.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/libbb.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/vi.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/editors/vi.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/optimize/cursor.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/use/signals.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/crashme.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/dot/cmd.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/yankmark.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/readonly.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/search.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/colon.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/win/resize.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/setopts.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/vi/set.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/applets/busybox.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/applets/busybox.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/locale/support.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/installer.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/init.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/autowidth.h)
+/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/applets/applets.o: /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/applets/applets.c \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/busybox.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/usage.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/usage.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/applets.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/applets.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/applets.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/applets.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/suid.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/suid/config.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/pwd_.h) \
+ /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h $(dep_/home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/grp_.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/feature/suid/config/quiet.h) \
+   $(wildcard /home/geoffrey/Documents/PFE/sources/uClinux/user/busybox/include/config/file.h)

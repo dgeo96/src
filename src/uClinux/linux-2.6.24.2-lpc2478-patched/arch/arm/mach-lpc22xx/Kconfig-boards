@@ -1,0 +1,32 @@
+#	linux/arch/arm/mach-lpc22xx/Kconfig-boards
+#
+
+comment "Board Type"
+
+choice
+	prompt "NXP LPC22XX type"
+
+config BOARD_LPC2468_EA
+	bool "Embedded Artists OEM Base Board and LPC2468 OEM Board"
+
+config BOARD_LPC_E2468
+	bool "Olimex LPC-E2468"
+
+config BOARD_LPC_2478STK
+	bool "Olimex LPC-E2478-STK"
+	
+endchoice
+
+menu "Board Options"
+	depends on BOARD_LPC2468_EA || BOARD_LPC_E2468 || BOARD_LPC_2478STK
+
+config BOARD_LPC2468_EA_BOOTLOADER
+	bool "bootloader used"
+	default y
+
+config BOARD_LPC2468_EA_BOOTARGS
+	depends on BOARD_LPC2468_EA_BOOTLOADER
+	hex "bootargs Address"
+	default 0x40000100
+
+endmenu

@@ -1,0 +1,13 @@
++ install -m 644 libm.a ../lib
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib/libmwin.a(winuser.o): In function `chkPaintMsg':
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/winuser.c:132: undefined reference to `MwSelect'
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib/libmwin.a(winuser.o): In function `PeekMessage':
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/winuser.c:163: undefined reference to `MwSelect'
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib/libmwin.a(winuser.o): In function `MwFindClassByName':
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/mwin/winuser.c:215: undefined reference to `strcmpi'
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/lib/libmwengine.a(devfont.o): In function `GdCreateFont':
+/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/engine/devfont.c:130: undefined reference to `strcmpi'
+collect2: ld returned 1 exit status
+make[6]: *** [/home/ivan/work/lpc-2478-stk/uClinux-dist-lpc_2478_stk/user/microwin/src/bin/mdemo] Error 1
+make[5]: *** [subdir-mwin] Error 2
+

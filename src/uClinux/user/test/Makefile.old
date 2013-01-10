@@ -1,0 +1,6 @@
+# Chemin à éditer ...
+CC=/home/leirbag/projects/pfe-olimex/uClinux-dist-lpc_2478_stk/tools/ucfront-gcc arm-linux-gcc -g -Dlinux -D__linux__ -Dunix -D__uClinux__ -Wl,-elf2flt -pipe -msoft-float -D__PIC__ -fpic -msingle-pic-base -fno-common -fno-builtin -Wall -DEMBED
+EXTRAFLAGS=-lfreetype -I./include/ -L.
+
+all:
+	$(CC) test_ts.c $(EXTRAFLAGS) -o test_ts

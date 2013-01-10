@@ -1,0 +1,1 @@
+#undef  CONFIG_PC110_PAD

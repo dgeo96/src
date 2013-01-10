@@ -1,0 +1,16 @@
+***************
+*** 62,68 ****
+  user="laforge"
+  db="ulogd"
+  host="localhost"
+- use_ssl=0
+  
+  [PGSQL]
+  table="ulog"
+--- 62,67 ----
+  user="laforge"
+  db="ulogd"
+  host="localhost"
+  
+  [PGSQL]
+  table="ulog"

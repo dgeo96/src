@@ -1,0 +1,2660 @@
+#	linux/arch/arm/mach-LPC24xx/Kconfig-lpc2468	
+#	Copyright (C) 2007 Siemens Building Technologies
+#	                   <mailto:philippe.goetz@siemens.com>
+#
+
+menu "NXP LPC2468 Pin Selection for P0"
+
+choice
+	prompt "NXP LPC2468 P0.0"
+	default LPC2468_PINSEL_P0_0_GPIO
+
+config LPC2468_PINSEL_P0_0_GPIO
+	bool "P0.0 is a GPIO" 
+
+config LPC2468_PINSEL_P0_0_RD1
+	bool "P0.0 is RD1"
+	depends on LPC22XX_CAN1
+
+config LPC2468_PINSEL_P0_0_TXD3
+	bool "P0.0 is TXD3"
+	depends on LPC22XX_UART3
+
+config LPC2468_PINSEL_P0_0_SDA1
+	bool "P0.0 is SDA1"
+	depends on LPC22XX_I2C1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.1"
+	default LPC2468_PINSEL_P0_1_GPIO
+
+config LPC2468_PINSEL_P0_1_GPIO
+	bool "P0.1 is a GPIO"
+
+config LPC2468_PINSEL_P0_1_TD1
+	bool "P0.1 is TD1"
+	depends on LPC22XX_CAN1
+
+config LPC2468_PINSEL_P0_1_TXD3
+	bool "P0.1 is TXD3"
+	depends on LPC22XX_UART3
+
+config LPC2468_PINSEL_P0_1_SCL1
+	bool "P0.1 is SCL1"
+	depends on LPC22XX_I2C1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.2"
+	default LPC2468_PINSEL_P0_2_TXD0
+	default LPC2468_PINSEL_P0_2_GPIO
+
+config LPC2468_PINSEL_P0_2_GPIO
+	bool "P0.2 is a GPIO" 
+
+config LPC2468_PINSEL_P0_2_TXD0
+	bool "P0.2 is TXD0"
+	depends on LPC22XX_UART0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.3"
+	default LPC2468_PINSEL_P0_3_RXD0
+	default LPC2468_PINSEL_P0_3_GPIO
+
+config LPC2468_PINSEL_P0_3_GPIO
+	bool "P0.3 is a GPIO" 
+
+config LPC2468_PINSEL_P0_3_RXD0
+	bool "P0.3 is RXD0"
+	depends on LPC22XX_UART0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.4"
+	default LPC2468_PINSEL_P0_4_GPIO
+
+config LPC2468_PINSEL_P0_4_GPIO
+	bool "P0.4 is a GPIO" 
+
+config LPC2468_PINSEL_P0_4_I2SRX_CLK
+	bool "P0.4 is I2SRX_CLK"
+
+config LPC2468_PINSEL_P0_4_RD2
+	bool "P0.4 is RD2"
+	depends on LPC22XX_CAN2
+
+config LPC2468_PINSEL_P0_4_CAP2_0
+	bool "P0.4 is CAP2[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.5"
+	default LPC2468_PINSEL_P0_5_GPIO
+
+config LPC2468_PINSEL_P0_5_GPIO
+	bool "P0.5 is a GPIO" 
+
+config LPC2468_PINSEL_P0_5_I2SRX_WS
+	bool "P0.5 is I2SRX_WS"
+
+config LPC2468_PINSEL_P0_5_TD2
+	bool "P0.5 is TD2"
+	depends on LPC22XX_CAN2
+
+config LPC2468_PINSEL_P0_5_CAP2_1
+	bool "P0.5 is CAP2[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.6"
+	default LPC2468_PINSEL_P0_6_GPIO
+
+config LPC2468_PINSEL_P0_6_GPIO
+	bool "P0.6 is a GPIO" 
+
+config LPC2468_PINSEL_P0_6_I2SRX_SDA
+	bool "P0.6 is I2SRX_SDA"
+
+config LPC2468_PINSEL_P0_6_SDA1
+	bool "P0.6 is SDA1"
+
+config LPC2468_PINSEL_P0_6_MAT2_0
+	bool "P0.6 is MAT2[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.7"
+	default LPC2468_PINSEL_P0_7_GPIO
+
+config LPC2468_PINSEL_P0_7_GPIO
+	bool "P0.7 is a GPIO" 
+
+config LPC2468_PINSEL_P0_7_I2STX_CLK
+	bool "P0.7 is I2STX_CLK"
+
+config LPC2468_PINSEL_P0_7_SCK1
+	bool "P0.7 is SCK1"
+
+config LPC2468_PINSEL_P0_7_MAT2_1
+	bool "P0.7 is MAT2[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.8"
+	default LPC2468_PINSEL_P0_8_GPIO
+
+config LPC2468_PINSEL_P0_8_GPIO
+	bool "P0.8 is a GPIO" 
+
+config LPC2468_PINSEL_P0_8_I2STX_WS
+	bool "P0.8 is I2STX_WS"
+
+config LPC2468_PINSEL_P0_8_MISO1
+	bool "P0.8 is MISO1"
+
+config LPC2468_PINSEL_P0_8_MAT2_2
+	bool "P0.8 is MAT2[2]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.9"
+	default LPC2468_PINSEL_P0_9_GPIO
+
+config LPC2468_PINSEL_P0_9_GPIO
+	bool "P0.9 is a GPIO" 
+
+config LPC2468_PINSEL_P0_9_I2STX_SDA
+	bool "P0.9 is I2STX_SDA"
+
+config LPC2468_PINSEL_P0_9_MOSI1
+	bool "P0.9 is MOSI1"
+
+config LPC2468_PINSEL_P0_9_MAT2_3
+	bool "P0.9 is MAT2[3]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.10"
+	default LPC2468_PINSEL_P0_10_GPIO
+
+config LPC2468_PINSEL_P0_10_GPIO
+	bool "P0.10 is a GPIO" 
+
+config LPC2468_PINSEL_P0_11_TXD2
+	bool "P0.11 is TXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P0_11_SDA2
+	bool "P0.11 is SDA2"
+	depends on LPC22XX_I2C2
+
+config LPC2468_PINSEL_P0_11_MAT3_0
+	bool "P0.11 is MAT3[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.11"
+	default LPC2468_PINSEL_P0_11_GPIO
+
+config LPC2468_PINSEL_P0_11_GPIO
+	bool "P0.11 is a GPIO"
+
+config LPC2468_PINSEL_P0_11_RXD2
+	bool "P0.11 is RXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P0_11_SCL2
+	bool "P0.11 is SCL2"
+	depends on LPC22XX_I2C2
+
+config LPC2468_PINSEL_P0_11_MAT3_1
+	bool "P0.11 is MAT3[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.12"
+	default LPC2468_PINSEL_P0_12_USB_PPWR2 if LPC22XX_USB2_HOST
+	default LPC2468_PINSEL_P0_12_GPIO
+
+config LPC2468_PINSEL_P0_12_GPIO
+	bool "P0.12 is a GPIO" 
+
+config LPC2468_PINSEL_P0_12_USB_PPWR2
+	bool "P0.12 is !USB_PPWR2"
+
+config LPC2468_PINSEL_P0_12_MISO1
+	bool "P0.12 is MISO1"
+
+config LPC2468_PINSEL_P0_12_AD0_6
+	bool "P0.12 is AD0[6]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.13"
+	default LPC2468_PINSEL_P0_13_USB_UP_LED2 if LPC22XX_USB2_HOST
+	default LPC2468_PINSEL_P0_13_GPIO
+
+config LPC2468_PINSEL_P0_13_GPIO
+	bool "P0.13 is a GPIO" 
+
+config LPC2468_PINSEL_P0_13_USB_UP_LED2
+	bool "P0.13 is USB_UP_LED2"
+
+config LPC2468_PINSEL_P0_13_MOSI1
+	bool "P0.13 is MOSI1"
+
+config LPC2468_PINSEL_P0_13_AD0_7
+	bool "P0.13 is AD0[7]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.14"
+	default LPC2468_PINSEL_P0_14_GPIO
+
+config LPC2468_PINSEL_P0_14_GPIO
+	bool "P0.14 is a GPIO" 
+
+config LPC2468_PINSEL_P0_14_USB_HSTEN2
+	bool "P0.14 is !USB_HSTEN2"
+
+config LPC2468_PINSEL_P0_14_USB_CONNECT2
+	bool "P0.14 is USB_CONNECT2"
+
+config LPC2468_PINSEL_P0_14_SSEL1
+	bool "P0.14 is SSEL1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.15"
+	default LPC2468_PINSEL_P0_15_GPIO
+
+config LPC2468_PINSEL_P0_15_GPIO
+	bool "P0.15 is a GPIO" 
+
+config LPC2468_PINSEL_P0_15_TXD1
+	bool "P0.16 is TXD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_15_SCK0
+	bool "P0.16 is SCK0"
+
+config LPC2468_PINSEL_P0_15_SCK
+	bool "P0.16 is SCK"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.16"
+	default LPC2468_PINSEL_P0_16_GPIO
+
+config LPC2468_PINSEL_P0_16_GPIO
+	bool "P0.16 is a GPIO" 
+
+config LPC2468_PINSEL_P0_16_RXD1
+	bool "P0.16 is RXD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_16_SSEL0
+	bool "P0.16 is SSEL0"
+
+config LPC2468_PINSEL_P0_16_SSEL
+	bool "P0.16 is SSEL"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.17"
+	default LPC2468_PINSEL_P0_17_GPIO
+
+config LPC2468_PINSEL_P0_17_GPIO
+	bool "P0.17 is a GPIO" 
+
+config LPC2468_PINSEL_P0_17_CTS1
+	bool "P0.17 is CTS1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_17_MISO0
+	bool "P0.17 is MISO0"
+
+config LPC2468_PINSEL_P0_17_MISO
+	bool "P0.17 is MISO"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.18"
+	default LPC2468_PINSEL_P0_18_GPIO
+
+config LPC2468_PINSEL_P0_18_GPIO
+	bool "P0.18 is a GPIO" 
+
+config LPC2468_PINSEL_P0_18_DCD1
+	bool "P0.18 is DCD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_18_MOSI0
+	bool "P0.18 is MOSI0"
+
+config LPC2468_PINSEL_P0_18_MOSI
+	bool "P0.18 is MOSI"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.19"
+	default LPC2468_PINSEL_P0_19_GPIO
+
+config LPC2468_PINSEL_P0_19_GPIO
+	bool "P0.19 is a GPIO" 
+
+config LPC2468_PINSEL_P0_19_DSR1
+	bool "P0.19 is DSR1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_19_MCICLK
+	bool "P0.19 is MCICLK"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P0_19_SDA1
+	bool "P0.19 is SDA1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.20"
+	default LPC2468_PINSEL_P0_20_GPIO
+
+config LPC2468_PINSEL_P0_20_GPIO
+	bool "P0.20 is a GPIO" 
+
+config LPC2468_PINSEL_P0_20_DTR1
+	bool "P0.20 is DTR1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_20_MCICMD
+	bool "P0.20 is MCICMD"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P0_20_SCL1
+	bool "P0.20 is SCL1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.21"
+	default LPC2468_PINSEL_P0_21_GPIO
+
+config LPC2468_PINSEL_P0_21_GPIO
+	bool "P0.21 is a GPIO"
+
+config LPC2468_PINSEL_P0_21_RI1
+	bool "P0.21 is RI1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_21_MCIPWR
+	bool "P0.21 is MCIPWR"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P0_21_RD1
+	bool "P0.21 is RD1"
+	depends on LPC22XX_CAN1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.22"
+	default LPC2468_PINSEL_P0_22_MCIDAT0 if LPC22XX_MMC
+	default LPC2468_PINSEL_P0_22_GPIO
+
+config LPC2468_PINSEL_P0_22_GPIO
+	bool "P0.22 is a GPIO" 
+
+config LPC2468_PINSEL_P0_22_RTS1
+	bool "P0.22 is RTS1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P0_22_MCIDAT0
+	bool "P0.22 is MCIDAT0"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P0_22_TD1
+	bool "P0.22 is TD1"
+	depends on LPC22XX_CAN1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.23"
+	default LPC2468_PINSEL_P0_23_GPIO
+
+config LPC2468_PINSEL_P0_23_GPIO
+	bool "P0.23 is a GPIO" 
+
+config LPC2468_PINSEL_P0_23_AD0_0
+	bool "P0.24 is AD0[0]"
+
+config LPC2468_PINSEL_P0_23_I2SRX_CLK
+	bool "P0.24 is I2SRX_CLK"
+
+config LPC2468_PINSEL_P0_23_CAP3_0
+	bool "P0.24 is CAP3[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.24"
+	default LPC2468_PINSEL_P0_24_GPIO
+
+config LPC2468_PINSEL_P0_24_GPIO
+	bool "P0.24 is a GPIO" 
+
+config LPC2468_PINSEL_P0_24_AD0_1
+	bool "P0.24 is AD0[1]"
+
+config LPC2468_PINSEL_P0_24_I2SRX_WS
+	bool "P0.24 is I2SRX_WS"
+
+config LPC2468_PINSEL_P0_24_CAP3_1
+	bool "P0.24 is CAP3[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.25"
+	default LPC2468_PINSEL_P0_25_GPIO
+
+config LPC2468_PINSEL_P0_25_GPIO
+	bool "P0.25 is a GPIO" 
+
+config LPC2468_PINSEL_P0_25_AD0_2
+	bool "P0.25 is AD0[2]"
+
+config LPC2468_PINSEL_P0_25_I2SRX_SDA
+	bool "P0.25 is I2SRX_SDA"
+
+config LPC2468_PINSEL_P0_25_TXD3
+	bool "P0.25 is TXD3"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.26"
+	default LPC2468_PINSEL_P0_26_GPIO
+
+config LPC2468_PINSEL_P0_26_GPIO
+	bool "P0.26 is a GPIO" 
+
+config LPC2468_PINSEL_P0_26_AD0_3
+	bool "P0.28 is AD0[3]"
+
+config LPC2468_PINSEL_P0_26_AOUT
+	bool "P0.28 is AOUT"
+
+config LPC2468_PINSEL_P0_26_RXD3
+	bool "P0.28 is RXD3"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.27"
+	default LPC2468_PINSEL_P0_27_GPIO
+
+config LPC2468_PINSEL_P0_27_GPIO
+	bool "P0.27 is a GPIO" 
+
+config LPC2468_PINSEL_P0_27_SDA1
+	bool "P0.27 is SDA1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.28"
+	default LPC2468_PINSEL_P0_28_GPIO
+
+config LPC2468_PINSEL_P0_28_GPIO
+	bool "P0.28 is a GPIO" 
+
+config LPC2468_PINSEL_P0_28_SCL1
+	bool "P0.28 is SCL1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.29"
+	default LPC2468_PINSEL_P0_29_USB_DPLUS1 if LPC22XX_USB1
+	default LPC2468_PINSEL_P0_29_GPIO
+
+config LPC2468_PINSEL_P0_29_GPIO
+	bool "P0.29 is a GPIO" 
+
+config LPC2468_PINSEL_P0_29_USB_DPLUS1
+	bool "P0.29 is USB_D+1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.30"
+	default LPC2468_PINSEL_P0_30_USB_DMOINS1 if LPC22XX_USB1
+	default LPC2468_PINSEL_P0_30_GPIO
+
+config LPC2468_PINSEL_P0_30_GPIO
+	bool "P0.30 is a GPIO" 
+
+config LPC2468_PINSEL_P0_30_USB_DMOINS1
+	bool "P0.30 is USB_D-1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P0.31"
+	default LPC2468_PINSEL_P0_31_GPIO
+
+config LPC2468_PINSEL_P0_31_GPIO
+	bool "P0.31 is a GPIO"
+
+config LPC2468_PINSEL_P0_31_USB_DPLUS2
+	bool "P0.31 is USB_D+2"
+
+endchoice
+
+endmenu
+
+menu "NXP LPC2468 Pin Selection for P1"
+
+choice
+	prompt "NXP LPC2468 P1.0"
+	default LPC2468_PINSEL_P1_0_ENET_TXD0 if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_0_GPIO
+
+config LPC2468_PINSEL_P1_0_GPIO
+	bool "P1.0 is a GPIO" 
+
+config LPC2468_PINSEL_P1_0_ENET_TXD0
+	bool "P1.0 is ENET_TXD0"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.1"
+	default LPC2468_PINSEL_P1_1_ENET_TXD1 if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_1_GPIO
+
+config LPC2468_PINSEL_P1_1_GPIO
+	bool "P1.1 is a GPIO"
+
+config LPC2468_PINSEL_P1_1_ENET_TXD1
+	bool "P1.2 is ENET_TXD1"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.2"
+	default LPC2468_PINSEL_P1_2_ENET_TXD2 if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_2_MCICLK if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_2_GPIO
+
+config LPC2468_PINSEL_P1_2_GPIO
+	bool "P1.2 is a GPIO"
+
+config LPC2468_PINSEL_P1_2_ENET_TXD2
+	bool "P1.2 is ENET_TXD2"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_2_MCICLK
+	bool "P1.2 is MCICLK"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_2_PWM0_2
+	bool "P1.2 is PWM0[2]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.3"
+	default LPC2468_PINSEL_P1_3_ENET_TXD3 if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_3_MCICMD if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_3_GPIO
+
+config LPC2468_PINSEL_P1_3_GPIO
+	bool "P1.3 is a GPIO" 
+
+config LPC2468_PINSEL_P1_3_ENET_TXD3
+	bool "P1.3 is ENET_TXD3"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_3_MCICMD
+	bool "P1.3 is MCICMD"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_3_PWM0_3
+	bool "P1.3 is PWM0[3]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.4"
+	default LPC2468_PINSEL_P1_4_ENET_TX_EN if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_4_GPIO
+
+config LPC2468_PINSEL_P1_4_GPIO
+	bool "P1.4 is a GPIO" 
+
+config LPC2468_PINSEL_P1_4_ENET_TX_EN
+	bool "P1.4 is ENET_TX_EN"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.5"
+	default LPC2468_PINSEL_P1_5_ENET_TX_ER if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_5_MCIPWR if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_5_GPIO
+
+config LPC2468_PINSEL_P1_5_GPIO
+	bool "P1.5 is a GPIO"
+
+config LPC2468_PINSEL_P1_5_ENET_TX_ER
+	bool "P1.5 is ENET_TX_ER"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_5_MCIPWR
+	bool "P1.5 is MCIPWR"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_5_PWM0_4
+	bool "P1.5 is PWM0[4]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.6"
+	default LPC2468_PINSEL_P1_6_ENET_TX_CLK if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_6_GPIO
+
+config LPC2468_PINSEL_P1_6_GPIO
+	bool "P1.6 is a GPIO" 
+
+config LPC2468_PINSEL_P1_6_ENET_TX_CLK
+	bool "P1.6 is ENET_TX_CLK"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_6_MCIDAT0
+	bool "P1.6 is MCIDAT0"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_6_PWM0_5
+	bool "P1.6 is PWM0[5]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.7"
+	default LPC2468_PINSEL_P1_7_ENET_COL if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_7_MCIDAT1 if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_7_GPIO
+
+config LPC2468_PINSEL_P1_7_GPIO
+	bool "P1.7 is a GPIO" 
+
+config LPC2468_PINSEL_P1_7_ENET_COL
+	bool "P1.7 is ENET_COL"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_7_MCIDAT1
+	bool "P1.7 is MCIDAT1"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_7_PWM0_5
+	bool "P1.7 is PWM0[5]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.8"
+	default LPC2468_PINSEL_P1_8_ENET_CRS if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_8_GPIO
+
+config LPC2468_PINSEL_P1_8_GPIO
+	bool "P1.8 is a GPIO" 
+
+config LPC2468_PINSEL_P1_8_ENET_CRS
+	bool "P1.8 is ENET_CRS_DV/ENET_CRS"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.9"
+	default LPC2468_PINSEL_P1_9_ENET_RXD0 if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_9_GPIO
+
+config LPC2468_PINSEL_P1_9_GPIO
+	bool "P1.9 is a GPIO" 
+
+config LPC2468_PINSEL_P1_9_ENET_RXD0
+	bool "P1.9 is ENET_RXD0"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.10"
+	default LPC2468_PINSEL_P1_10_ENET_RXD1 if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_10_GPIO
+
+config LPC2468_PINSEL_P1_10_GPIO
+	bool "P1.10 is a GPIO" 
+
+config LPC2468_PINSEL_P1_10_ENET_RXD1
+	bool "P1.10 is ENET_RXD1"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.11"
+	default LPC2468_PINSEL_P1_11_ENET_RXD2 if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_11_MCIDAT2 if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_11_GPIO
+
+config LPC2468_PINSEL_P1_11_GPIO
+	bool "P1.11 is a GPIO"
+
+config LPC2468_PINSEL_P1_11_ENET_RXD2
+	bool "P1.11 is ENET_RXD2"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_11_MCIDAT2
+	bool "P1.11 is MCIDAT2"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_11_PWM1_0
+	bool "P1.11 is PWM1[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.12"
+	default LPC2468_PINSEL_P1_12_ENET_RXD3 if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_12_MCIDAT3 if LPC22XX_MMC
+	default LPC2468_PINSEL_P1_12_GPIO
+
+config LPC2468_PINSEL_P1_12_GPIO
+	bool "P1.12 is a GPIO" 
+
+config LPC2468_PINSEL_P1_12_ENET_RXD3
+	bool "P1.12 is ENET_RXD3"
+	depends on LPC22XX_ETH
+
+config LPC2468_PINSEL_P1_12_MCIDAT3
+	bool "P1.12 is MCIDAT3"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P1_12_PCAP0_0
+	bool "P1.12 is PCAP0[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.13"
+	default LPC2468_PINSEL_P1_13_ENET_RX_DV if LPC22XX_ETH_MMI
+	default LPC2468_PINSEL_P1_13_GPIO
+
+config LPC2468_PINSEL_P1_13_GPIO
+	bool "P1.13 is a GPIO"
+
+config LPC2468_PINSEL_P1_13_ENET_RX_DV
+	bool "P1.13 is ENET_RX_DV"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.14"
+	default LPC2468_PINSEL_P1_14_ENET_RX_ER if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_14_GPIO
+
+config LPC2468_PINSEL_P1_14_GPIO
+	bool "P1.14 is a GPIO" 
+
+config LPC2468_PINSEL_P1_14_ENET_RX_ER
+	bool "P1.14 is ENET_RX_ER"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.15"
+	default LPC2468_PINSEL_P1_15_ENET_RX_CLK if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_15_GPIO
+
+config LPC2468_PINSEL_P1_15_GPIO
+	bool "P1.15 is a GPIO" 
+
+config LPC2468_PINSEL_P1_15_ENET_RX_CLK
+	bool "P1.15 is ENET_REF_CLK/ENET_RX_CLK"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.16"
+	default LPC2468_PINSEL_P1_16_ENET_MDC if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_16_GPIO
+
+config LPC2468_PINSEL_P1_16_GPIO
+	bool "P1.16 is a GPIO" 
+
+config LPC2468_PINSEL_P1_16_ENET_MDC
+	bool "P1.16 is ENET_MDC"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.17"
+	default LPC2468_PINSEL_P1_17_ENET_MDIO if LPC22XX_ETH
+	default LPC2468_PINSEL_P1_17_GPIO
+
+config LPC2468_PINSEL_P1_17_GPIO
+	bool "P1.17 is a GPIO" 
+
+config LPC2468_PINSEL_P1_17_ENET_MDIO
+	bool "P1.17 is ENET_MDIO"
+	depends on LPC22XX_ETH
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.18"
+	default LPC2468_PINSEL_P1_18_GPIO
+
+config LPC2468_PINSEL_P1_18_GPIO
+	bool "P1.18 is a GPIO" 
+
+config LPC2468_PINSEL_P1_18_USB_UP_LED1
+	bool "P1.18 is USB_UP_LED1"
+
+config LPC2468_PINSEL_P1_18_PWM1_1
+	bool "P1.18 is PWM1[1]"
+
+config LPC2468_PINSEL_P1_18_CAP1_0
+	bool "P1.18 is CAP1[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.19"
+	default LPC2468_PINSEL_P1_19_GPIO
+
+config LPC2468_PINSEL_P1_19_GPIO
+	bool "P1.19 is a GPIO" 
+
+config LPC2368_PINSEL_P1_19_USB_TX_EP1
+	bool "P1.19 is !USB_TX_EP1"
+
+config LPC2368_PINSEL_P1_19_USB_PPWR1
+	bool "P1.19 is !USB_PPWR1"
+
+config LPC2368_PINSEL_P1_19_CAP1_1
+	bool "P1.19 is CAP1[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.20"
+	default LPC2468_PINSEL_P1_20_GPIO
+
+config LPC2468_PINSEL_P1_20_GPIO
+	bool "P1.20 is a GPIO" 
+
+config LPC2468_PINSEL_P1_20_USB_TX_DP1
+	bool "P1.20 is USB_TX_DP1"
+
+config LPC2468_PINSEL_P1_20_PWM1_2
+	bool "P1.20 is PWM1[2]"
+
+config LPC2468_PINSEL_P1_20_SCK0
+	bool "P1.20 is SCK0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.21"
+	default LPC2468_PINSEL_P1_21_GPIO
+
+config LPC2468_PINSEL_P1_21_GPIO
+	bool "P1.21 is a GPIO"
+
+config LPC2468_PINSEL_P1_21_USB_TX_DM1
+	bool "P1.21 is USB_TX_DM1"
+
+config LPC2468_PINSEL_P1_21_PWM1_3
+	bool "P1.21 is PWM1[3]"
+
+config LPC2468_PINSEL_P1_21_SSEL0
+	bool "P1.21 is SSEL0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.22"
+	default LPC2468_PINSEL_P1_22_GPIO
+
+config LPC2468_PINSEL_P1_22_GPIO
+	bool "P1.22 is a GPIO" 
+
+config LPC2468_PINSEL_P1_22_USB_RCV1
+	bool "P1.22 is USB_RX_RCV1"
+
+config LPC2468_PINSEL_P1_22_USB_PWRD1
+	bool "P1.22 is USB_PWRD1"
+
+config LPC2468_PINSEL_P1_22_MAT1_0
+	bool "P1.22 is MAT1[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.23"
+	default LPC2468_PINSEL_P1_23_GPIO
+
+config LPC2468_PINSEL_P1_23_GPIO
+	bool "P1.23 is a GPIO" 
+
+config LPC2368_PINSEL_P1_23_USB_RX_DP1
+	bool "P1.23 is USB_RX_DP1"
+
+config LPC2368_PINSEL_P1_23_PWM1_4
+	bool "P1.23 is PWM1[4]"
+
+config LPC2368_PINSEL_P1_23_MISO0
+	bool "P1.23 is MISO0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.24"
+	default LPC2468_PINSEL_P1_24_GPIO
+
+config LPC2468_PINSEL_P1_24_GPIO
+	bool "P1.24 is a GPIO" 
+
+config LPC2468_PINSEL_P1_24_USB_RX_DM1
+	bool "P1.24 is USB_RX_DM1"
+
+config LPC2468_PINSEL_P1_24_PWM1_5
+	bool "P1.24 is PWM1[5]"
+
+config LPC2468_PINSEL_P1_24_MOSI0
+	bool "P1.24 is MOSI0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.25"
+	default LPC2468_PINSEL_P1_25_GPIO
+
+config LPC2468_PINSEL_P1_25_GPIO
+	bool "P1.25 is a GPIO" 
+
+config LPC2468_PINSEL_P1_25_USB_LS1
+	bool "P1.25 is !USB_LS1"
+
+config LPC2468_PINSEL_P1_25_USB_HSTEN1
+	bool "P1.25 is !USB_HSTEN1"
+
+config LPC2468_PINSEL_P1_25_MAT1_1
+	bool "P1.25 is MAT1[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.26"
+	default LPC2468_PINSEL_P1_26_GPIO
+
+config LPC2468_PINSEL_P1_26_GPIO
+	bool "P1.26 is a GPIO" 
+
+config LPC2468_PINSEL_P1_26_USB_SSPND1
+	bool "P1.26 is !USB_SSPND1"
+
+config LPC2468_PINSEL_P1_26_PWM1_6
+	bool "P1.26 is PWM1[6]"
+
+config LPC2468_PINSEL_P1_26_CAP0_0
+	bool "P1.26 is CAP0[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.27"
+	default LPC2468_PINSEL_P1_27_USB_INT1 if LPC22XX_USB1
+	default LPC2468_PINSEL_P1_27_GPIO
+
+config LPC2468_PINSEL_P1_27_GPIO
+	bool "P1.27 is a GPIO" 
+
+config LPC2468_PINSEL_P1_27_USB_INT1
+	bool "P1.27 is !USB_INT1"
+
+config LPC2468_PINSEL_P1_27_USB_OVRCR1
+	bool "P1.27 is USB_OVRCR1"
+
+config LPC2468_PINSEL_P1_27_CAP0_1
+	bool "P1.27 is CAP0[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.28"
+	default LPC2468_PINSEL_P1_28_USB_SCL1 if LPC22XX_USB1
+	default LPC2468_PINSEL_P1_28_GPIO
+
+config LPC2468_PINSEL_P1_28_GPIO
+	bool "P1.28 is a GPIO" 
+
+config LPC2468_PINSEL_P1_28_USB_SCL1
+	bool "P1.28 is USB_SCL1"
+
+config LPC2468_PINSEL_P1_28_PCAP1_0
+	bool "P1.28 is PCAP1[0]"
+
+config LPC2468_PINSEL_P1_28_MAT0_0
+	bool "P1.28 is MAT0[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.29"
+	default LPC2468_PINSEL_P1_29_USB_SDA1 if LPC22XX_USB1
+	default LPC2468_PINSEL_P1_29_GPIO
+
+config LPC2468_PINSEL_P1_29_GPIO
+	bool "P1.29 is a GPIO" 
+
+config LPC2468_PINSEL_P1_29_USB_SDA1
+	bool "P1.29 is USB_SDA1"
+
+config LPC2468_PINSEL_P1_29_PCAP1_1
+	bool "P1.29 is PCAP1[1]"
+
+config LPC2468_PINSEL_P1_29_MAT0_1
+	bool "P1.29 is MAT0[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.30"
+	default LPC2468_PINSEL_P1_30_GPIO
+
+config LPC2468_PINSEL_P1_30_GPIO
+	bool "P1.30 is a GPIO" 
+
+config LPC2468_PINSEL_P1_30_USB_PWRD2
+	bool "P1.30 is USB_PWRD2"
+
+config LPC2468_PINSEL_P1_30_VBUS
+	bool "P1.30 is VBUS"
+
+config LPC2468_PINSEL_P1_30_AD0_4
+	bool "P1.30 is AD0[5]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P1.31"
+	default LPC2468_PINSEL_P1_29_USB_OVRCR2 if LPC22XX_USB2_HOST
+	default LPC2468_PINSEL_P1_31_GPIO
+
+config LPC2468_PINSEL_P1_31_GPIO
+	bool "P1.31 is a GPIO"
+
+config LPC2468_PINSEL_P1_31_USB_OVRCR2
+	bool "P1.31 is !USB_OVRCR2"
+
+config LPC2468_PINSEL_P1_31_SCLK1
+	bool "P1.31 is TXD1"
+	depends on LPC22XX_SSP1
+
+config LPC2468_PINSEL_P1_31_AD0_5
+	bool "P1.31 is AD0[5]"
+
+endchoice
+
+endmenu
+
+menu "NXP LPC2468 Pin Selection for P2"
+
+choice
+	prompt "NXP LPC2468 P2.0"
+	default LPC2468_PINSEL_P2_0_GPIO
+
+config LPC2468_PINSEL_P2_0_GPIO
+	bool "P2.0 is a GPIO" 
+
+config LPC2468_PINSEL_P2_0_PWM1_1
+	bool "P2.0 is PWM1[1]"
+
+config LPC2468_PINSEL_P2_0_TXD1
+	bool "P2.0 is TXD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_0_TRACECLK
+	bool "P2.0 is TRACECLK"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.1"
+	default LPC2468_PINSEL_P2_1_GPIO
+
+config LPC2468_PINSEL_P2_1_GPIO
+	bool "P2.1 is a GPIO"
+
+config LPC2468_PINSEL_P2_1_PWM1_2
+	bool "P2.1 is PWM1[2]"
+
+config LPC2468_PINSEL_P2_1_RXD1
+	bool "P2.1 is RXD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_1_PIPESTAT0
+	bool "P2.1 is PIPESTAT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.2"
+	default LPC2468_PINSEL_P2_2_GPIO
+
+config LPC2468_PINSEL_P2_2_GPIO
+	bool "P2.2 is a GPIO" 
+
+config LPC2468_PINSEL_P2_2_PWM1_3
+	bool "P2.2 is PWM1[3]"
+
+config LPC2468_PINSEL_P2_2_CTS1
+	bool "P2.2 is CTS1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_2_PIPESTAT1
+	bool "P2.2 is PIPESTAT1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.3"
+	default LPC2468_PINSEL_P2_3_GPIO
+
+config LPC2468_PINSEL_P2_3_GPIO
+	bool "P2.3 is a GPIO" 
+
+config LPC2468_PINSEL_P2_3_PWM1_4
+	bool "P2.3 is PWM1[4]"
+
+config LPC2468_PINSEL_P2_3_DCD1
+	bool "P2.3 is DCD1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_3_PIPESTAT2
+	bool "P2.3 is PIPESTAT2"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.4"
+	default LPC2468_PINSEL_P2_4_GPIO
+
+config LPC2468_PINSEL_P2_4_GPIO
+	bool "P2.4 is a GPIO" 
+
+config LPC2468_PINSEL_P2_4_PWM1_5
+	bool "P2.4 is PWM1[5]"
+
+config LPC2468_PINSEL_P2_4_DSR1
+	bool "P2.4 is DSR1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_4_TRACESYNC
+	bool "P2.4 is TRACESYNC"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.5"
+	default LPC2468_PINSEL_P2_5_GPIO
+
+config LPC2468_PINSEL_P2_5_GPIO
+	bool "P2.5 is a GPIO" 
+
+config LPC2468_PINSEL_P2_5_PWM1_6
+	bool "P2.5 is PWM1[6]"
+
+config LPC2468_PINSEL_P2_5_DTR1
+	bool "P2.5 is DTR1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_5_TRACEPKT0
+	bool "P2.5 is TRACEPKT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.6"
+	default LPC2468_PINSEL_P2_6_GPIO
+
+config LPC2468_PINSEL_P2_6_GPIO
+	bool "P2.6 is a GPIO" 
+
+config LPC2468_PINSEL_P2_6_PCAP1_0
+	bool "P2.6 is PCAP1[0]"
+
+config LPC2468_PINSEL_P2_6_RI1
+	bool "P2.6 is RI1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_6_TRACEPKT1
+	bool "P2.6 is TRACEPKT1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.7"
+	default LPC2468_PINSEL_P2_7_GPIO
+
+config LPC2468_PINSEL_P2_7_GPIO
+	bool "P2.7 is a GPIO" 
+
+config LPC2468_PINSEL_P2_7_RD2
+	bool "P2.7 is RD2"
+	depends on LPC22XX_CAN2
+
+config LPC2468_PINSEL_P2_7_RTS1
+	bool "P2.7 is RTS1"
+	depends on LPC22XX_UART1
+
+config LPC2468_PINSEL_P2_7_TRACEPKT2
+	bool "P2.7 is TRACEPKT2"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.8"
+	default LPC2468_PINSEL_P2_8_GPIO
+
+config LPC2468_PINSEL_P2_8_GPIO
+	bool "P2.8 is a GPIO" 
+
+config LPC2468_PINSEL_P2_8_TD2
+	bool "P2.8 is TD2"
+	depends on LPC22XX_CAN2
+
+config LPC2468_PINSEL_P2_8_TXD2
+	bool "P2.8 is TXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P2_8_TRACEPKT3
+	bool "P2.8 is TRACEPKT3"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.9"
+	default LPC2468_PINSEL_P2_9_GPIO
+
+config LPC2468_PINSEL_P2_9_GPIO
+	bool "P2.9 is a GPIO" 
+
+config LPC2468_PINSEL_P2_9_USB_CONNECT1
+	bool "P2.9 is USB_CONNECT1"
+
+config LPC2468_PINSEL_P2_9_RXD2
+	bool "P2.9 is RXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P2_9_EXTIN0
+	bool "P2.9 is EXTIN0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.10"
+	default LPC2468_PINSEL_P2_10_GPIO
+
+config LPC2468_PINSEL_P2_10_GPIO
+	bool "P2.10 is a GPIO" 
+
+config LPC2468_PINSEL_P2_10_EINT0
+	bool "P2.10 is !EINT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.11"
+	default LPC2468_PINSEL_P2_11_GPIO
+
+config LPC2468_PINSEL_P2_11_GPIO
+	bool "P2.11 is a GPIO"
+
+config LPC2468_PINSEL_P2_11_EINT1
+	bool "P2.11 is !EINT1"
+
+config LPC2468_PINSEL_P2_11_MCIDAT1
+	bool "P2.11 is MCIDAT1"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P2_11_I2STX_CLK
+	bool "P2.11 is I2STX_CLK"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.12"
+	default LPC2468_PINSEL_P2_12_GPIO
+
+config LPC2468_PINSEL_P2_12_GPIO
+	bool "P2.12 is a GPIO" 
+
+config LPC2468_PINSEL_P2_12_EINT2
+	bool "P2.12 is !EINT2"
+
+config LPC2468_PINSEL_P2_12_MCIDAT2
+	bool "P2.12 is MCIDAT2"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P2_12_I2STX_WS
+	bool "P2.12 is I2STX_WS"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.13"
+	default LPC2468_PINSEL_P2_13_GPIO
+
+config LPC2468_PINSEL_P2_13_GPIO
+	bool "P2.13 is a GPIO" 
+
+
+config LPC2468_PINSEL_P2_13_EINT3
+	bool "P2.13 is !EINT3"
+
+config LPC2468_PINSEL_P2_13_MCIDAT3
+	bool "P2.13 is MCIDAT3"
+	depends on LPC22XX_MMC
+
+config LPC2468_PINSEL_P2_13_I2STX_SDA
+	bool "P2.13 is I2STX_SDA"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.14"
+	default LPC2468_PINSEL_P2_14_GPIO
+
+config LPC2468_PINSEL_P2_14_GPIO
+	bool "P2.14 is a GPIO" 
+
+config LPC2468_PINSEL_P2_14_CS2
+	bool "P2.14 is !CS2"
+
+config LPC2468_PINSEL_P2_14_CAP2_0
+	bool "P2.14 is CAP2[0]"
+
+config LPC2468_PINSEL_P2_14_SDA1
+	bool "P2.14 is SDA1"
+	depends on LPC22XX_I2C1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.15"
+	default LPC2468_PINSEL_P2_15_GPIO
+
+config LPC2468_PINSEL_P2_15_GPIO
+	bool "P2.15 is a GPIO" 
+
+config LPC2468_PINSEL_P2_15_CS3
+	bool "P2.15 is !CS3"
+
+config LPC2468_PINSEL_P2_15_CAP2_1
+	bool "P2.15 is CAP2[1]"
+
+config LPC2468_PINSEL_P2_15_SCL1
+	bool "P2.15 is SCL1"
+	depends on LPC22XX_I2C1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.16"
+	default LPC2468_PINSEL_P2_16_GPIO
+
+config LPC2468_PINSEL_P2_16_GPIO
+	bool "P2.16 is a GPIO" 
+
+config LPC2468_PINSEL_P2_16_CAS
+	bool "P2.16 is !CAS"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.17"
+	default LPC2468_PINSEL_P2_17_GPIO
+
+config LPC2468_PINSEL_P2_17_GPIO
+	bool "P2.17 is a GPIO" 
+
+config LPC2468_PINSEL_P2_17_RAS
+	bool "P2.17 is !RAS"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.18"
+	default LPC2468_PINSEL_P2_18_GPIO
+
+config LPC2468_PINSEL_P2_18_GPIO
+	bool "P2.18 is a GPIO" 
+
+config LPC2468_PINSEL_P2_18_CLKOUT0
+	bool "P2.18 is CLKOUT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.19"
+	default LPC2468_PINSEL_P2_19_GPIO
+
+config LPC2468_PINSEL_P2_19_GPIO
+	bool "P2.19 is a GPIO" 
+
+config LPC2468_PINSEL_P2_19_CLKOUT1
+	bool "P2.19 is CLKOUT1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.20"
+	default LPC2468_PINSEL_P2_20_GPIO
+
+config LPC2468_PINSEL_P2_20_GPIO
+	bool "P2.20 is a GPIO" 
+
+config LPC2468_PINSEL_P2_20_DYNCS0
+	bool "P2.20 is !DYNCS0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.21"
+	default LPC2468_PINSEL_P2_21_GPIO
+
+config LPC2468_PINSEL_P2_21_GPIO
+	bool "P2.21 is a GPIO"
+
+config LPC2468_PINSEL_P2_21_DYNCS1
+	bool "P2.21 is !DYNCS1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.22"
+	default LPC2468_PINSEL_P2_22_GPIO
+
+config LPC2468_PINSEL_P2_22_GPIO
+	bool "P2.22 is a GPIO" 
+
+config LPC2468_PINSEL_P2_22_DYNCS2
+	bool "P2.22 is !DYNCS2"
+
+config LPC2468_PINSEL_P2_22_CAP3_0
+	bool "P2.22 is CAP3[0]"
+
+config LPC2468_PINSEL_P2_22_SCK0
+	bool "P2.22 is SCK0"
+	depends on LPC22XX_SSP0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.23"
+	default LPC2468_PINSEL_P2_23_GPIO
+
+config LPC2468_PINSEL_P2_23_GPIO
+	bool "P2.23 is a GPIO" 
+
+config LPC2468_PINSEL_P2_23_DYNCS3
+	bool "P2.23 is !DYNCS3"
+
+config LPC2468_PINSEL_P2_23_CAP3_1
+	bool "P2.23 is CAP3[1]"
+
+config LPC2468_PINSEL_P2_23_SSEL0
+	bool "P2.23 is SSEL0"
+	depends on LPC22XX_SSP0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.24"
+	default LPC2468_PINSEL_P2_24_GPIO
+
+config LPC2468_PINSEL_P2_24_GPIO
+	bool "P2.24 is a GPIO" 
+
+config LPC2468_PINSEL_P2_24_CKEOUT0
+	bool "P2.24 is CKEOUT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.25"
+	default LPC2468_PINSEL_P2_25_GPIO
+
+config LPC2468_PINSEL_P2_25_GPIO
+	bool "P2.25 is a GPIO" 
+
+config LPC2468_PINSEL_P2_25_CKEOUT1
+	bool "P2.25 is CKEOUT1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.26"
+	default LPC2468_PINSEL_P2_26_GPIO
+
+config LPC2468_PINSEL_P2_26_GPIO
+	bool "P2.26 is a GPIO" 
+
+config LPC2468_PINSEL_P2_26_CKEOUT2
+	bool "P2.26 is CKEOUT2"
+
+config LPC2468_PINSEL_P2_26_MAT3_0
+	bool "P2.26 is MAT3[0]"
+
+config LPC2468_PINSEL_P2_26_MISO0
+	bool "P2.26 is MISO0"
+	depends on LPC22XX_SSP0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.27"
+	default LPC2468_PINSEL_P2_27_GPIO
+
+config LPC2468_PINSEL_P2_27_GPIO
+	bool "P2.27 is a GPIO" 
+
+config LPC2468_PINSEL_P2_27_CKEOUT3
+	bool "P2.27 is CKEOUT3"
+
+config LPC2468_PINSEL_P2_27_MAT3_1
+	bool "P2.27 is MAT3[1]"
+
+config LPC2468_PINSEL_P2_27_MOSI0
+	bool "P2.27 is MOSI0"
+	depends on LPC22XX_SSP0
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.28"
+	default LPC2468_PINSEL_P2_28_GPIO
+
+config LPC2468_PINSEL_P2_28_GPIO
+	bool "P2.28 is a GPIO" 
+
+config LPC2468_PINSEL_P2_28_DQMOUT0
+	bool "P2.28 is DQMOUT0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.29"
+	default LPC2468_PINSEL_P2_29_GPIO
+
+config LPC2468_PINSEL_P2_29_GPIO
+	bool "P2.29 is a GPIO" 
+
+config LPC2468_PINSEL_P2_29_DQMOUT1
+	bool "P2.29 is DQMOUT1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.30"
+	default LPC2468_PINSEL_P2_30_GPIO
+
+config LPC2468_PINSEL_P2_30_GPIO
+	bool "P2.30 is a GPIO" 
+
+config LPC2468_PINSEL_P2_30_DQMOUT2
+	bool "P2.30 is DQMOUT2"
+
+config LPC2468_PINSEL_P2_30_MAT3_2
+	bool "P2.30 is MAT3[2]"
+
+config LPC2468_PINSEL_P2_30_SDA2
+	bool "P2.30 is SDA2"
+	depends on LPC22XX_I2C2
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P2.31"
+	default LPC2468_PINSEL_P2_31_GPIO
+
+config LPC2468_PINSEL_P2_31_GPIO
+	bool "P2.31 is a GPIO"
+
+config LPC2468_PINSEL_P2_31_DQMOUT3
+	bool "P2.31 is DQMOUT3"
+
+config LPC2468_PINSEL_P2_31_MAT3_3
+	bool "P2.31 is MAT3[3]"
+
+config LPC2468_PINSEL_P2_31_SCL2
+	bool "P2.31 is SCL2"
+	depends on LPC22XX_I2C2
+
+endchoice
+
+endmenu
+
+menu "NXP LPC2468 Pin Selection for P3"
+
+choice
+	prompt "NXP LPC2468 P3.0"
+	default LPC2468_PINSEL_P3_0_D0
+	default LPC2468_PINSEL_P3_0_GPIO
+
+config LPC2468_PINSEL_P3_0_GPIO
+	bool "P3.0 is a GPIO" 
+
+config LPC2468_PINSEL_P3_0_D0
+	bool "P3.0 is D0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.1"
+	default LPC2468_PINSEL_P3_1_D1
+	default LPC2468_PINSEL_P3_1_GPIO
+
+config LPC2468_PINSEL_P3_1_GPIO
+	bool "P3.1 is a GPIO" 
+
+config LPC2468_PINSEL_P3_1_D1
+	bool "P3.1 is D1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.2"
+	default LPC2468_PINSEL_P3_2_D2
+	default LPC2468_PINSEL_P3_2_GPIO
+
+config LPC2468_PINSEL_P3_2_GPIO
+	bool "P3.2 is a GPIO" 
+
+config LPC2468_PINSEL_P3_2_D2
+	bool "P3.2 is D2"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.3"
+	default LPC2468_PINSEL_P3_3_D3
+	default LPC2468_PINSEL_P3_3_GPIO
+
+config LPC2468_PINSEL_P3_3_GPIO
+	bool "P3.3 is a GPIO" 
+
+config LPC2468_PINSEL_P3_3_D3
+	bool "P3.3 is D3"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.4"
+	default LPC2468_PINSEL_P3_4_D4
+	default LPC2468_PINSEL_P3_4_GPIO
+
+config LPC2468_PINSEL_P3_4_GPIO
+	bool "P3.4 is a GPIO" 
+
+config LPC2468_PINSEL_P3_4_D4
+	bool "P3.4 is D4"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.5"
+	default LPC2468_PINSEL_P3_5_D5
+	default LPC2468_PINSEL_P3_5_GPIO
+
+config LPC2468_PINSEL_P3_5_GPIO
+	bool "P3.5 is a GPIO" 
+
+config LPC2468_PINSEL_P3_5_D5
+	bool "P3.5 is D5"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.6"
+	default LPC2468_PINSEL_P3_6_D6
+	default LPC2468_PINSEL_P3_6_GPIO
+
+config LPC2468_PINSEL_P3_6_GPIO
+	bool "P3.6 is a GPIO" 
+
+config LPC2468_PINSEL_P3_6_D6
+	bool "P3.6 is D6"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.7"
+	default LPC2468_PINSEL_P3_7_D7
+	default LPC2468_PINSEL_P3_7_GPIO
+
+config LPC2468_PINSEL_P3_7_GPIO
+	bool "P3.7 is a GPIO" 
+
+config LPC2468_PINSEL_P3_7_D7
+	bool "P3.7 is D7"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.8"
+	default LPC2468_PINSEL_P3_8_D8
+	default LPC2468_PINSEL_P3_8_GPIO
+
+config LPC2468_PINSEL_P3_8_GPIO
+	bool "P3.8 is a GPIO" 
+
+config LPC2468_PINSEL_P3_8_D8
+	bool "P3.8 is D8"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.9"
+	default LPC2468_PINSEL_P3_9_D9
+	default LPC2468_PINSEL_P3_9_GPIO
+
+config LPC2468_PINSEL_P3_9_GPIO
+	bool "P3.9 is a GPIO" 
+
+config LPC2468_PINSEL_P3_9_D9
+	bool "P3.9 is D9"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.10"
+	default LPC2468_PINSEL_P3_10_D10
+	default LPC2468_PINSEL_P3_10_GPIO
+
+config LPC2468_PINSEL_P3_10_GPIO
+	bool "P3.10 is a GPIO" 
+
+config LPC2468_PINSEL_P3_10_D10
+	bool "P3.10 is D10"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.11"
+	default LPC2468_PINSEL_P3_11_D11
+	default LPC2468_PINSEL_P3_11_GPIO
+
+config LPC2468_PINSEL_P3_11_GPIO
+	bool "P3.11 is a GPIO" 
+
+config LPC2468_PINSEL_P3_11_D11
+	bool "P3.11 is D11"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.12"
+	default LPC2468_PINSEL_P3_12_D12
+	default LPC2468_PINSEL_P3_12_GPIO
+
+config LPC2468_PINSEL_P3_12_GPIO
+	bool "P3.12 is a GPIO" 
+
+config LPC2468_PINSEL_P3_12_D12
+	bool "P3.12 is D12"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.13"
+	default LPC2468_PINSEL_P3_13_D13
+	default LPC2468_PINSEL_P3_13_GPIO
+
+config LPC2468_PINSEL_P3_13_GPIO
+	bool "P3.13 is a GPIO" 
+
+config LPC2468_PINSEL_P3_13_D13
+	bool "P3.13 is D13"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.14"
+	default LPC2468_PINSEL_P3_14_D14
+	default LPC2468_PINSEL_P3_14_GPIO
+
+config LPC2468_PINSEL_P3_14_GPIO
+	bool "P3.14 is a GPIO" 
+
+config LPC2468_PINSEL_P3_14_D14
+	bool "P3.14 is D14"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.15"
+	default LPC2468_PINSEL_P3_15_D15
+	default LPC2468_PINSEL_P3_15_GPIO
+
+config LPC2468_PINSEL_P3_15_GPIO
+	bool "P3.15 is a GPIO" 
+
+config LPC2468_PINSEL_P3_15_D15
+	bool "P3.15 is D15"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.16"
+	default LPC2468_PINSEL_P3_16_TXD1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_16_GPIO
+
+config LPC2468_PINSEL_P3_16_GPIO
+	bool "P3.16 is a GPIO" 
+
+config LPC2468_PINSEL_P3_16_D16
+	bool "P3.16 is D16"
+
+config LPC2468_PINSEL_P3_16_PWM0_1
+	bool "P3.16 is PWM0[1]"
+
+config LPC2468_PINSEL_P3_16_TXD1
+	bool "P3.16 is TXD1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.17"
+	default LPC2468_PINSEL_P3_17_RXD1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_17_GPIO
+
+config LPC2468_PINSEL_P3_17_GPIO
+	bool "P3.17 is a GPIO" 
+
+config LPC2468_PINSEL_P3_17_D17
+	bool "P3.17 is D17"
+
+config LPC2468_PINSEL_P3_17_PWM0_2
+	bool "P3.17 is PWM0[2]"
+
+config LPC2468_PINSEL_P3_17_RXD1
+	bool "P3.17 is RXD1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.18"
+	default LPC2468_PINSEL_P3_18_CTS1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_18_GPIO
+
+config LPC2468_PINSEL_P3_18_GPIO
+	bool "P3.18 is a GPIO" 
+
+config LPC2468_PINSEL_P3_18_D18
+	bool "P3.18 is D18"
+
+config LPC2468_PINSEL_P3_18_PWM0_3
+	bool "P3.18 is PWM0[3]"
+
+config LPC2468_PINSEL_P3_18_CTS1
+	bool "P3.18 is CTS1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.19"
+	default LPC2468_PINSEL_P3_19_DCD1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_19_GPIO
+
+config LPC2468_PINSEL_P3_19_GPIO
+	bool "P3.19 is a GPIO" 
+
+config LPC2468_PINSEL_P3_19_D19
+	bool "P3.19 is D19"
+
+config LPC2468_PINSEL_P3_19_PWM0_4
+	bool "P3.19 is PWM0[4]"
+
+config LPC2468_PINSEL_P3_19_DCD1
+	bool "P3.19 is DCD1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.20"
+	default LPC2468_PINSEL_P3_20_DSR1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_20_GPIO
+
+config LPC2468_PINSEL_P3_20_GPIO
+	bool "P3.20 is a GPIO" 
+
+config LPC2468_PINSEL_P3_20_D20
+	bool "P3.20 is D20"
+
+config LPC2468_PINSEL_P3_20_PWM0_5
+	bool "P3.20 is PWM0[5]"
+
+config LPC2468_PINSEL_P3_20_DSR1
+	bool "P3.20 is DSR1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.21"
+	default LPC2468_PINSEL_P3_21_DTR1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_21_GPIO
+
+config LPC2468_PINSEL_P3_21_GPIO
+	bool "P3.21 is a GPIO"
+
+config LPC2468_PINSEL_P3_21_D21
+	bool "P3.21 is D21"
+
+config LPC2468_PINSEL_P3_21_PWM0_6
+	bool "P3.21 is PWM0[6]"
+
+config LPC2468_PINSEL_P3_21_DTR1
+	bool "P3.21 is DTR1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.22"
+	default LPC2468_PINSEL_P3_22_RI1 if LPC22XX_UART1
+	default LPC2468_PINSEL_P3_22_GPIO
+
+config LPC2468_PINSEL_P3_22_GPIO
+	bool "P3.22 is a GPIO" 
+
+config LPC2468_PINSEL_P3_22_D22
+	bool "P3.22 is D22"
+
+config LPC2468_PINSEL_P3_22_PCAP0_0
+	bool "P3.22 is PCAP0[0]"
+
+config LPC2468_PINSEL_P3_22_RI1
+	bool "P3.22 is RI1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.23"
+	default LPC2468_PINSEL_P3_23_GPIO
+
+config LPC2468_PINSEL_P3_23_GPIO
+	bool "P3.23 is a GPIO" 
+
+config LPC2468_PINSEL_P3_23_D23
+	bool "P3.23 is D23"
+
+config LPC2468_PINSEL_P3_23_CAP0_0
+	bool "P3.23 is CAP0[0]"
+
+config LPC2468_PINSEL_P3_23_PCAP1_0
+	bool "P3.23 is PCAP1[0]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.24"
+	default LPC2468_PINSEL_P3_24_GPIO
+
+config LPC2468_PINSEL_P3_24_GPIO
+	bool "P3.24 is a GPIO" 
+
+config LPC2468_PINSEL_P3_24_D24
+	bool "P3.24 is D24"
+
+config LPC2468_PINSEL_P3_24_CAP0_1
+	bool "P3.24 is CAP0[1]"
+
+config LPC2468_PINSEL_P3_24_PWM1_1
+	bool "P3.24 is PWM1[1]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.25"
+	default LPC2468_PINSEL_P3_25_GPIO
+
+config LPC2468_PINSEL_P3_25_GPIO
+	bool "P3.25 is a GPIO" 
+
+config LPC2468_PINSEL_P3_25_D25
+	bool "P3.25 is D25"
+
+config LPC2468_PINSEL_P3_25_MAT0_0
+	bool "P3.24 is MAT0[0]"
+
+config LPC2468_PINSEL_P3_25_PWM1_2
+	bool "P3.24 is PWM1[2]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.26"
+	default LPC2468_PINSEL_P3_26_GPIO
+
+config LPC2468_PINSEL_P3_26_GPIO
+	bool "P3.26 is a GPIO" 
+
+config LPC2468_PINSEL_P3_26_D26
+	bool "P3.26 is D26"
+
+config LPC2468_PINSEL_P3_26_MAT0_1
+	bool "P3.26 is MAT0[1]"
+
+config LPC2468_PINSEL_P3_26_PWM1_3
+	bool "P3.26 is PWM1[3]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.27"
+	default LPC2468_PINSEL_P3_27_GPIO
+
+config LPC2468_PINSEL_P3_27_GPIO
+	bool "P3.27 is a GPIO" 
+
+config LPC2468_PINSEL_P3_27_D27
+	bool "P3.27 is D27"
+
+config LPC2468_PINSEL_P3_27_CAP1_0
+	bool "P3.27 is CAP1[0]"
+
+config LPC2468_PINSEL_P3_27_PWM1_4
+	bool "P3.27 is PWM1[4]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.28"
+	default LPC2468_PINSEL_P3_28_GPIO
+
+config LPC2468_PINSEL_P3_28_GPIO
+	bool "P3.28 is a GPIO" 
+
+config LPC2468_PINSEL_P3_28_D28
+	bool "P3.28 is D28"
+
+config LPC2468_PINSEL_P3_28_CAP1_1
+	bool "P3.28 is CAP1[1]"
+
+config LPC2468_PINSEL_P3_28_PWM1_5
+	bool "P3.28 is PWM1[5]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.29"
+	default LPC2468_PINSEL_P3_29_GPIO
+
+config LPC2468_PINSEL_P3_29_GPIO
+	bool "P3.29 is a GPIO" 
+
+config LPC2468_PINSEL_P3_29_D29
+	bool "P3.29 is D29"
+
+config LPC2468_PINSEL_P3_29_MAT1_0
+	bool "P3.29 is MAT1[0]"
+
+config LPC2468_PINSEL_P3_29_PWM1_6
+	bool "P3.29 is PWM1[6]"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.30"
+	default LPC2468_PINSEL_P3_30_RTS1 if LPC22XX_UART1 
+	default LPC2468_PINSEL_P3_30_GPIO
+
+config LPC2468_PINSEL_P3_30_GPIO
+	bool "P3.30 is a GPIO" 
+
+config LPC2468_PINSEL_P3_30_D30
+	bool "P3.30 is D30"
+
+config LPC2468_PINSEL_P3_30_MAT1_1
+	bool "P3.30 is MAT1[1]"
+
+config LPC2468_PINSEL_P3_30_RTS1
+	bool "P3.30 is RTS1"
+	depends on LPC22XX_UART1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P3.31"
+	default LPC2468_PINSEL_P3_31_GPIO
+
+config LPC2468_PINSEL_P3_31_GPIO
+	bool "P3.31 is a GPIO"
+
+config LPC2468_PINSEL_P3_31_D31
+	bool "P3.31 is D31"
+
+config LPC2468_PINSEL_P3_31_MAT1_2
+	bool "P3.30 is MAT1[2]"
+
+endchoice
+
+endmenu
+
+menu "NXP LPC2468 Pin Selection for P4"
+
+choice
+	prompt "NXP LPC2468 P4.0"
+	default LPC2468_PINSEL_P4_0_A0
+	default LPC2468_PINSEL_P4_0_GPIO
+
+config LPC2468_PINSEL_P4_0_GPIO
+	bool "P4.0 is a GPIO" 
+
+config LPC2468_PINSEL_P4_0_A0
+	bool "P4.0 is A0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.1"
+	default LPC2468_PINSEL_P4_1_A1
+	default LPC2468_PINSEL_P4_1_GPIO
+
+config LPC2468_PINSEL_P4_1_GPIO
+	bool "P4.1 is a GPIO" 
+
+config LPC2468_PINSEL_P4_1_A1
+	bool "P4.1 is A1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.2"
+	default LPC2468_PINSEL_P4_2_A2
+	default LPC2468_PINSEL_P4_2_GPIO
+
+config LPC2468_PINSEL_P4_2_GPIO
+	bool "P4.2 is a GPIO" 
+
+config LPC2468_PINSEL_P4_2_A2
+	bool "P4.2 is A2"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.3"
+	default LPC2468_PINSEL_P4_3_A3
+	default LPC2468_PINSEL_P4_3_GPIO
+
+config LPC2468_PINSEL_P4_3_GPIO
+	bool "P4.3 is a GPIO" 
+
+config LPC2468_PINSEL_P4_3_A3
+	bool "P4.3 is A3"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.4"
+	default LPC2468_PINSEL_P4_4_A4
+	default LPC2468_PINSEL_P4_4_GPIO
+
+config LPC2468_PINSEL_P4_4_GPIO
+	bool "P4.4 is a GPIO" 
+
+config LPC2468_PINSEL_P4_4_A4
+	bool "P4.4 is A4"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.5"
+	default LPC2468_PINSEL_P4_5_A5
+	default LPC2468_PINSEL_P4_5_GPIO
+
+config LPC2468_PINSEL_P4_5_GPIO
+	bool "P4.5 is a GPIO" 
+
+config LPC2468_PINSEL_P4_5_A5
+	bool "P4.5 is A5"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.6"
+	default LPC2468_PINSEL_P4_6_A6
+	default LPC2468_PINSEL_P4_6_GPIO
+
+config LPC2468_PINSEL_P4_6_GPIO
+	bool "P4.6 is a GPIO" 
+
+config LPC2468_PINSEL_P4_6_A6
+	bool "P4.6 is A6"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.7"
+	default LPC2468_PINSEL_P4_7_A7
+	default LPC2468_PINSEL_P4_7_GPIO
+
+config LPC2468_PINSEL_P4_7_GPIO
+	bool "P4.7 is a GPIO" 
+
+config LPC2468_PINSEL_P4_7_A7
+	bool "P4.7 is A7"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.8"
+	default LPC2468_PINSEL_P4_8_A8
+	default LPC2468_PINSEL_P4_8_GPIO
+
+config LPC2468_PINSEL_P4_8_GPIO
+	bool "P4.8 is a GPIO" 
+
+config LPC2468_PINSEL_P4_8_A8
+	bool "P4.8 is A8"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.9"
+	default LPC2468_PINSEL_P4_9_A9
+	default LPC2468_PINSEL_P4_9_GPIO
+
+config LPC2468_PINSEL_P4_9_GPIO
+	bool "P4.9 is a GPIO" 
+
+config LPC2468_PINSEL_P4_9_A9
+	bool "P4.9 is A9"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.10"
+	default LPC2468_PINSEL_P4_10_A10
+	default LPC2468_PINSEL_P4_10_GPIO
+
+config LPC2468_PINSEL_P4_10_GPIO
+	bool "P4.10 is a GPIO" 
+
+config LPC2468_PINSEL_P4_10_A10
+	bool "P4.10 is A10"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.11"
+	default LPC2468_PINSEL_P4_11_A11
+	default LPC2468_PINSEL_P4_11_GPIO
+
+config LPC2468_PINSEL_P4_11_GPIO
+	bool "P4.11 is a GPIO" 
+
+config LPC2468_PINSEL_P4_11_A11
+	bool "P4.11 is A11"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.12"
+	default LPC2468_PINSEL_P4_12_A12
+	default LPC2468_PINSEL_P4_12_GPIO
+
+config LPC2468_PINSEL_P4_12_GPIO
+	bool "P4.12 is a GPIO" 
+
+config LPC2468_PINSEL_P4_12_A12
+	bool "P4.12 is A12"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.13"
+	default LPC2468_PINSEL_P4_13_A13
+	default LPC2468_PINSEL_P4_13_GPIO
+
+config LPC2468_PINSEL_P4_13_GPIO
+	bool "P4.13 is a GPIO" 
+
+config LPC2468_PINSEL_P4_13_A13
+	bool "P4.13 is A13"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.14"
+	default LPC2468_PINSEL_P4_14_A14
+	default LPC2468_PINSEL_P4_14_GPIO
+
+config LPC2468_PINSEL_P4_14_GPIO
+	bool "P4.14 is a GPIO" 
+
+config LPC2468_PINSEL_P4_14_A14
+	bool "P4.14 is A14"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.15"
+	default LPC2468_PINSEL_P4_15_A15
+	default LPC2468_PINSEL_P4_15_GPIO
+
+config LPC2468_PINSEL_P4_15_GPIO
+	bool "P4.15 is a GPIO" 
+
+config LPC2468_PINSEL_P4_15_A15
+	bool "P4.15 is A15"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.16"
+	default LPC2468_PINSEL_P4_16_A16
+	default LPC2468_PINSEL_P4_16_GPIO
+
+config LPC2468_PINSEL_P4_16_GPIO
+	bool "P4.16 is a GPIO" 
+
+config LPC2468_PINSEL_P4_16_A16
+	bool "P4.16 is A16"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.17"
+	default LPC2468_PINSEL_P4_17_A17
+	default LPC2468_PINSEL_P4_17_GPIO
+
+config LPC2468_PINSEL_P4_17_GPIO
+	bool "P4.17 is a GPIO" 
+
+config LPC2468_PINSEL_P4_17_A17
+	bool "P4.17 is A17"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.18"
+	default LPC2468_PINSEL_P4_18_A18
+	default LPC2468_PINSEL_P4_18_GPIO
+
+config LPC2468_PINSEL_P4_18_GPIO
+	bool "P4.18 is a GPIO" 
+
+config LPC2468_PINSEL_P4_18_A18
+	bool "P4.18 is A18"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.19"
+	default LPC2468_PINSEL_P4_19_A19
+	default LPC2468_PINSEL_P4_19_GPIO
+
+config LPC2468_PINSEL_P4_19_GPIO
+	bool "P4.19 is a GPIO" 
+
+config LPC2468_PINSEL_P4_19_A19
+	bool "P4.19 is A19"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.20"
+	default LPC2468_PINSEL_P4_20_A20
+	default LPC2468_PINSEL_P4_20_GPIO
+
+config LPC2468_PINSEL_P4_20_GPIO
+	bool "P4.20 is a GPIO" 
+
+config LPC2468_PINSEL_P4_20_A20
+	bool "P4.20 is A20"
+
+config LPC2468_PINSEL_P4_20_SDA2
+	bool "P4.20 is SDA2"
+	depends on LPC22XX_I2C2
+
+config LPC2468_PINSEL_P4_20_SCK1
+	bool "P4.20 is SCK1"
+	depends on LPC22XX_SSP1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.21"
+	default LPC2468_PINSEL_P4_21_A21
+	default LPC2468_PINSEL_P4_21_GPIO
+
+config LPC2468_PINSEL_P4_21_GPIO
+	bool "P4.21 is a GPIO"
+
+config LPC2468_PINSEL_P4_21_A21
+	bool "P4.21 is A21"
+
+config LPC2468_PINSEL_P4_21_SCL2
+	bool "P4.21 is SCL2"
+	depends on LPC22XX_I2C2
+
+config LPC2468_PINSEL_P4_21_SSEL1
+	bool "P4.21 is SSEL1"
+	depends on LPC22XX_SSP1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.22"
+	default LPC2468_PINSEL_P4_22_A22
+	default LPC2468_PINSEL_P4_22_GPIO
+
+config LPC2468_PINSEL_P4_22_GPIO
+	bool "P4.22 is a GPIO" 
+
+config LPC2468_PINSEL_P4_22_A22
+	bool "P4.22 is A22"
+
+config LPC2468_PINSEL_P4_22_RXD2
+	bool "P4.22 is RXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P4_22_MISO1
+	bool "P4.22 is MISO1"
+	depends on LPC22XX_SSP1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.23"
+	default LPC2468_PINSEL_P4_23_A23
+	default LPC2468_PINSEL_P4_23_GPIO
+
+config LPC2468_PINSEL_P4_23_GPIO
+	bool "P4.23 is a GPIO" 
+
+config LPC2468_PINSEL_P4_23_A23
+	bool "P4.23 is A23"
+
+config LPC2468_PINSEL_P4_23_TXD2
+	bool "P4.23 is TXD2"
+	depends on LPC22XX_UART2
+
+config LPC2468_PINSEL_P4_23_MOSI1
+	bool "P4.23 is MOSI1"
+	depends on LPC22XX_SSP1
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.24"
+	default LPC2468_PINSEL_P4_24_OE
+	default LPC2468_PINSEL_P4_24_GPIO
+
+config LPC2468_PINSEL_P4_24_GPIO
+	bool "P4.24 is a GPIO" 
+
+config LPC2468_PINSEL_P4_24_OE
+	bool "P4.24 is !OE"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.25"
+	default LPC2468_PINSEL_P4_25_WE
+	default LPC2468_PINSEL_P4_25_GPIO
+
+config LPC2468_PINSEL_P4_25_GPIO
+	bool "P4.25 is a GPIO" 
+
+config LPC2468_PINSEL_P4_25_WE
+	bool "P4.25 is !WE"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.26"
+	default LPC2468_PINSEL_P4_26_BLS0
+	default LPC2468_PINSEL_P4_26_GPIO
+
+config LPC2468_PINSEL_P4_26_GPIO
+	bool "P4.26 is a GPIO" 
+
+config LPC2468_PINSEL_P4_26_BLS0
+	bool "P4.26 is BLS0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.27"
+	default LPC2468_PINSEL_P4_27_BLS1
+	default LPC2468_PINSEL_P4_27_GPIO
+
+config LPC2468_PINSEL_P4_27_GPIO
+	bool "P4.27 is a GPIO" 
+
+config LPC2468_PINSEL_P4_27_BLS1
+	bool "P4.27 is BLS1"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.28"
+	default LPC2468_PINSEL_P4_28_GPIO
+
+config LPC2468_PINSEL_P4_28_GPIO
+	bool "P4.28 is a GPIO" 
+
+config LPC2468_PINSEL_P4_28_BLS2
+	bool "P4.28 is BLS3"
+
+config LPC2468_PINSEL_P4_28_MAT2_0
+	bool "P4.28 is MAT2[1]"
+
+config LPC2468_PINSEL_P4_28_TXD3
+	bool "P4.28 is TXD3"
+	depends on LPC22XX_UART3
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.29"
+	default LPC2468_PINSEL_P4_29_GPIO
+
+config LPC2468_PINSEL_P4_29_GPIO
+	bool "P4.29 is a GPIO" 
+
+config LPC2468_PINSEL_P4_29_BLS3
+	bool "P4.29 is BLS3"
+
+config LPC2468_PINSEL_P4_29_MAT2_1
+	bool "P4.29 is MAT2[1]"
+
+config LPC2468_PINSEL_P4_29_RXD3
+	bool "P4.29 is RXD3"
+	depends on LPC22XX_UART3
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.30"
+	default LPC2468_PINSEL_P4_30_CS0
+	default LPC2468_PINSEL_P4_30_GPIO
+
+config LPC2468_PINSEL_P4_30_GPIO
+	bool "P4.30 is a GPIO" 
+
+config LPC2468_PINSEL_P4_30_CS0
+	bool "P4.30 is !CS0"
+
+endchoice
+
+choice
+	prompt "NXP LPC2468 P4.31"
+	default LPC2468_PINSEL_P4_31_CS1
+	default LPC2468_PINSEL_P4_31_GPIO
+
+config LPC2468_PINSEL_P4_31_GPIO
+	bool "P4.31 is a GPIO"
+
+config LPC2468_PINSEL_P4_31_CS1
+	bool "P4.31 is !CS1"
+
+endchoice
+
+endmenu

@@ -1,0 +1,213 @@
+#	linux/arch/arm/mach-lpc22xx/Kconfig	
+#	Copyright (C) 2004 Philips Semiconductors
+#
+
+
+menu "LPC22xx Options"
+	depends on ARCH_LPC22XX
+
+config MACH_LPC22XX
+	bool
+	default y
+	help
+		NXP LPC22XX & LPC24xx Family
+
+config ARCH_SUPPORTS_BIG_ENDIAN
+    bool
+    default n
+	help
+	LPC22xx core supports LITTLE-ENDIAN only,
+	both for CPU core and the external memory access.
+
+config LPC22xx_Fosc
+    int	"Oscillator Frequency"
+    default 12000000
+    help
+	Oscillator frequency. Another common value is 14745600
+	Change it according to your board.
+	(PhyCORE HD200 Dev board(LPC22xx) use 10MHZ Oscillator)
+	
+config ARM_CLK
+	int 'Arm Core Clock'
+	default 58982400
+	help
+	CPU core clock frequency. If 14.75 Mhz ->58982400
+	Change it according to your application needs.
+
+config SKIP_DUMP_CPU_INFO
+	bool
+	default	y 
+	help
+	LPC22xx(ARM7TDMI) core has no cache and does not support cache size
+	recognition instructions which uses MMU features.
+
+config REMAP_VECTORS_TO_RAM
+	bool "Remap Vectors to external RAM"
+	default n
+	help
+	LPC22xx suppports ROM and RAM remap function. 
+	
+	config LARGE_ALLOCS
+	bool "Allow allocating large blocks (> 1MB) of memory"
+	help
+	  Allow the slab memory allocator to keep chains for very large
+	  memory sizes - upto 32MB. You may need this if your system has
+	  a lot of RAM, and you need to able to allocate very large
+	  contiguous chunks. If unsure, say N.
+
+config GENERIC_NVRAM
+	bool
+
+menu "NXP LPC22XX Block Selection"
+	depends on ARCH_LPC22XX
+
+config LPC22XX_TIMER1
+	bool "NXP LPC22XX TIMER1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_TIMER2
+	bool "NXP LPC22XX TIMER2"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_TIMER3
+	bool "NXP LPC22XX TIMER3"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_UART0
+	bool "NXP LPC22XX UART0"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_UART1
+	bool "NXP LPC22XX UART1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_UART2
+	bool "NXP LPC22XX UART2"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_UART3
+	bool "NXP LPC22XX UART3"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_RTC
+	bool "NXP LPC22XX RTC"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_RTC_CLKSRC
+	bool "NXP LPC22XX 32.768kHz oscillator for RTC"
+	depends on LPC22XX_RTC && ((CPU_LPC2468) || (CPU_LPC2478))
+	default y
+	help
+	  This option allows you to select the clock source for the RTC Clock.
+	  By default yes, meaning that a 32,768kHz oscillator will be used.
+
+	  Otherwise the source will be the PCLK and the RTC prescaler will be 
+	  automatically computed.
+
+	  This option is available for the following CPU:
+	  - LPC2468, LPC2478
+
+config LPC22XX_NVRAM
+	bool "NXP LPC22XX NVRAM"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+	select GENERIC_NVRAM
+
+config LPC22XX_I2C0
+	bool "NXP LPC22XX I2C0"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_I2C1
+	bool "NXP LPC22XX I2C1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_I2C2
+	bool "NXP LPC22XX I2C2"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_I2C3
+	bool "NXP LPC22XX I2C3"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_SPI
+	bool "NXP LPC22XX SPI"
+	depends on CPU_LPC2468
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_SSP0
+	bool "NXP LPC22XX SSP0"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_SSP1
+	bool "NXP LPC22XX SSP1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_I2S
+	bool "NXP LPC22XX I2S"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_MMC
+	bool "NXP LPC22XX MMC"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_ETH
+	bool "NXP LPC22XX ETH"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_ETH_MMI
+	bool "NXP LPC22XX MMI Phy"
+	depends on LPC22XX_ETH && ((CPU_LPC2468) || (CPU_LPC2478) )
+
+config LPC22XX_USB1
+	bool "NXP LPC22XX USB1 (OTG)"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_USB2
+	bool "NXP LPC22XX USB2 (HOST or DEVICE)"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_USB2_HOST
+	bool "NXP LPC22XX USB2 is HOST"
+	depends on LPC22XX_USB2 && ( (CPU_LPC2468) || (CPU_LPC2478))
+	default y
+
+config LPC22XX_CAN1
+	bool "NXP LPC22XX CAN1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+	default y if CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_CAN2
+	bool "NXP LPC22XX CAN2"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_PWM0
+	bool "NXP LPC22XX PWM0"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_PWM1
+	bool "NXP LPC22XX PWM1"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_ADC
+	bool "NXP LPC22XX ADC"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_DAC
+	bool "NXP LPC22XX DAC"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+config LPC22XX_WDT
+	bool "NXP LPC22XX WDT"
+	depends on CPU_LPC2468 || CPU_LPC2478
+
+endmenu
+
+endmenu

@@ -1,0 +1,6 @@
+#define UTS_VERSION "#112 Wed Jun 1 13:58:23 EST 2005"
+#define LINUX_COMPILE_TIME "13:58:23"
+#define LINUX_COMPILE_BY "gerg"
+#define LINUX_COMPILE_HOST "goober"
+#define LINUX_COMPILE_DOMAIN ""
+#define LINUX_COMPILER "gcc version 3.3.2"
